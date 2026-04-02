@@ -23,14 +23,14 @@ The project includes a compilation script that parses Markdown insights into ful
   - **Internal Linking**: The compiler systematically intercepts SEO-friendly slugs (e.g. `/japanese-buy-property-malaysia-rules`) mapping them to the specific output route paths (e.g. `/articles/01-C1-rules-costs-en.html`).
 - **Index UI**: They are all linked cohesively inside `articles.html` and placed in the main navigation.
 - **Slugs / URLs**:
-  - `00-PILLAR-complete-guide-en.html`
-  - `01-C1-rules-costs-en.html`
-  - `02-C2-mont-kiara-en.html`
-  - `03-C3-mm2h-en.html`
-  - `04-C4-buy-vs-rent-en.html`
-  - `05-C5-family-areas-en.html`
-  - `06-C6-investment-en.html`
-  *(Note: Replace `-en.html` with `-jp.html` for localized Japanese versions).*
+  - `malaysia-property-guide-japanese-buyers.html`
+  - `japanese-buy-property-malaysia-rules.html`
+  - `mont-kiara-japanese-expat-guide.html`
+  - `malaysia-mm2h-property-japanese.html`
+  - `klang-valley-buy-vs-rent-japanese-expat.html`
+  - `klang-valley-best-areas-japanese-families.html`
+  - `malaysia-property-investment-japanese-buyers.html`
+  *(Note: See the `/articles` folder for their Japanese-named counterparts).*
 
 ## Development
 

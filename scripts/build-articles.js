@@ -115,24 +115,8 @@ function buildArticles() {
       
       let htmlContent = marked(markdownContent);
       
-      // Fix Internal Links mapping
-      const isJp = file.includes('-jp.md');
-      
-      if (isJp) {
-        htmlContent = htmlContent.replace(/\/日本人-マレーシア-不動産-購入-ルール/g, '/articles/01-C1-rules-costs-jp.html');
-        htmlContent = htmlContent.replace(/\/モントキアラ-日本人-ガイド/g, '/articles/02-C2-mont-kiara-jp.html');
-        htmlContent = htmlContent.replace(/\/マレーシア-MM2H-不動産-日本人/g, '/articles/03-C3-mm2h-jp.html');
-        htmlContent = htmlContent.replace(/\/クランバレー-購入-賃貸-日本人-駐在員/g, '/articles/04-C4-buy-vs-rent-jp.html');
-        htmlContent = htmlContent.replace(/\/クランバレー-日本人-家族-住みやすいエリア/g, '/articles/05-C5-family-areas-jp.html');
-        htmlContent = htmlContent.replace(/\/マレーシア-不動産投資-日本人-利回り/g, '/articles/06-C6-investment-jp.html');
-      } else {
-        htmlContent = htmlContent.replace(/\/japanese-buy-property-malaysia-rules/g, '/articles/01-C1-rules-costs-en.html');
-        htmlContent = htmlContent.replace(/\/mont-kiara-japanese-expat-guide/g, '/articles/02-C2-mont-kiara-en.html');
-        htmlContent = htmlContent.replace(/\/malaysia-mm2h-property-japanese/g, '/articles/03-C3-mm2h-en.html');
-        htmlContent = htmlContent.replace(/\/klang-valley-buy-vs-rent-japanese-expat/g, '/articles/04-C4-buy-vs-rent-en.html');
-        htmlContent = htmlContent.replace(/\/klang-valley-best-areas-japanese-families/g, '/articles/05-C5-family-areas-en.html');
-        htmlContent = htmlContent.replace(/\/malaysia-property-investment-japanese-buyers/g, '/articles/06-C6-investment-en.html');
-      }
+      // Auto-append .html to any internal cross-reference that starts with / and has no extension
+      htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, 'href="/articles$1.html"');
       
       // Hide SEO metadata from visual rendering but keep in DOM for crawlers
       htmlContent = htmlContent.replace(/<p><strong>Meta description:<\/strong>.*?<\/p>/gs, match => `<div style="display: none;">${match}</div>`);
