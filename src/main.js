@@ -198,6 +198,50 @@ document.addEventListener('DOMContentLoaded', () => {
       const lang = item.getAttribute('data-lang');
       langBtn.innerHTML = text + ' ▾';
       setLanguage(lang);
+      
+      // Update mobile active state
+      document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+        if(btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
     });
   });
+
+  // Mobile Menu Logic
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  if (hamburgerMenu && mobileMenu && closeMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+
+    // Close when clicking a link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // Mobile Language Language logic
+    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const lang = btn.getAttribute('data-lang');
+        const text = btn.textContent;
+        setLanguage(lang);
+        
+        // update desktop
+        langBtn.innerHTML = text + ' ▾';
+        
+        // update mobile active state
+        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  }
 });
