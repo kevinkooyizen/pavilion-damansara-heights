@@ -96,6 +96,9 @@ The MRT3 Circle Line is under planning and early development, with construction 
 
 It is important to be honest about the risks, which any serious Japanese investor will want to understand.
 
+### Guaranteed Return Rate (GRR) Schemes
+Many developers offer 5% to 8% guaranteed returns for 3 to 5 years. While tempting, these often mask inflated purchase prices and carry significant default risks. For a complete analysis of why we recommend organic yields over guarantees, see our guide: [The Truth About Guaranteed Return Rates (GRR)](/guaranteed-return-rate-malaysia-property).
+
 ### Oversupply in Certain Submarkets
 
 The Klang Valley has experienced significant new residential supply over the past decade. Some corridors — particularly in Shah Alam, parts of Cheras, and outer suburban areas — have higher vacancy rates, making tenant acquisition difficult and depressing yields. Sticking to established expat corridors (Mont Kiara, KLCC, Bangsar) significantly reduces this risk.

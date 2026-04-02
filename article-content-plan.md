@@ -13,7 +13,7 @@
 ### Content Hub Structure
 This plan follows a **Pillar + Cluster** model:
 - **1 Pillar page** — the definitive guide (targets broad, high-volume terms)
-- **6 Cluster articles** — each targeting a specific intent, feeding back to the pillar
+- **7 Cluster articles** — each targeting a specific intent, feeding back to the pillar
 - **Internal linking logic** — each cluster links up to the pillar and sideways to 1–2 related clusters
 
 ```
@@ -24,7 +24,8 @@ This plan follows a **Pillar + Cluster** model:
         ├── [C3] MM2H Visa + Property Purchase — Complete 2025 Guide
         ├── [C4] Klang Valley for Japanese Work Expats — Buy vs Rent
         ├── [C5] Best Areas in Klang Valley for Japanese Families
-        └── [C6] Malaysia Property Investment Guide for Japanese Buyers
+        ├── [C6] Malaysia Property Investment Guide for Japanese Buyers
+        └── [C7] The Truth About Guaranteed Return Rates (GRR) in Malaysia
 ```
 
 ---
@@ -68,6 +69,7 @@ This plan follows a **Pillar + Cluster** model:
 - → C4 (buy vs rent section)
 - → C5 (family areas section)
 - → C6 (investment section)
+- → C7 (guaranteed return rate section under investment)
 
 ---
 
@@ -350,6 +352,10 @@ C5 (Family Areas) ──→ C1 (area min prices)
 C6 (Investment) ──→ C1 (RPGT + stamp duty)
 C6 (Investment) ──→ C3 (MM2H for higher LTV)
 C6 (Investment) ──→ C2 (MK yield anchor)
+C6 (Investment) ──→ C7 (GRR caution)
+
+C7 (GRR) ──→ C6 (investment mechanics)
+C7 (GRR) ──→ C2 (Mont Kiara as organic alternative)
 ```
 
 ---

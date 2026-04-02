@@ -30,6 +30,7 @@ The project includes a compilation script that parses Markdown insights into ful
   - `klang-valley-buy-vs-rent-japanese-expat.html`
   - `klang-valley-best-areas-japanese-families.html`
   - `malaysia-property-investment-japanese-buyers.html`
+  - `guaranteed-return-rate-malaysia-property.html`
   *(Note: See the `/articles` folder for their Japanese-named counterparts).*
 
 ## Development
