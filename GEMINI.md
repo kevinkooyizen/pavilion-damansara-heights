@@ -11,9 +11,9 @@ The application leverages an extremely lightweight Vanilla JS + HTML/CSS structu
 - Vite (fast local development & build tool)
 
 ## Key Project Architecture
-- `index.html`: The core structured document handling the layout grid, image blocks, and semantic containers.
-- `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters.
-- `src/main.js`: Adds interactivity, primarily managing sticky header classes, the language dropdown state, and initializing `IntersectionObserver` for all scroll transitions.
+- `index.html`: The core structured document handling the layout grid, image blocks, semantic containers, and the mobile responsive drawer overlay.
+- `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters including CSS media queries for desktop parity.
+- `src/main.js`: Adds interactivity, primarily managing sticky header classes, the desktop/mobile language switchers, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
 - `public/images/`: Highly optimized, raw static imagery replicating the high-end visuals.
 
 ## Articles System
