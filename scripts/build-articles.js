@@ -8,13 +8,14 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, '..');
 const articlesDir = path.join(rootDir, 'articles');
 
-const headerHTML = `
+const getHeaderHTML = (title, metaDesc) => `
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pavilion Imperial Residences | Insight Guide</title>
+    <title>${title} | Pavilion Imperial Residences</title>
+    <meta name="description" content="${metaDesc}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -111,7 +112,28 @@ function buildArticles() {
   files.forEach(file => {
     if (file.endsWith('.md')) {
       const filePath = path.join(articlesDir, file);
-      const markdownContent = fs.readFileSync(filePath, 'utf-8');
+      let markdownContent = fs.readFileSync(filePath, 'utf-8');
+      
+      // Extract H1 for document title
+      let docTitle = 'Insight Guide';
+      const h1Match = markdownContent.match(/^#\s+(.*)$/m);
+      if (h1Match) {
+         docTitle = h1Match[1];
+         // Note: If the user meant the title shouldn't render twice, we could remove it here.
+         // But we will keep it visually as H1 unless we find multiple. Let's just remove duplicate H1s.
+         let h1Count = 0;
+         markdownContent = markdownContent.replace(/^#\s+.*$/gm, (match) => {
+            h1Count++;
+            return h1Count > 1 ? '' : match;
+         });
+      }
+
+      // Extract Meta Description
+      let metaDesc = '';
+      const metaDescMatch = markdownContent.match(/^(?:\*\*Meta description:\*\*|\*\*メタディスクリプション：\*\*)\s*(.*)$/m);
+      if (metaDescMatch) {
+         metaDesc = metaDescMatch[1].trim();
+      }
       
       let htmlContent = marked(markdownContent);
       
@@ -124,7 +146,7 @@ function buildArticles() {
       htmlContent = htmlContent.replace(/<p><strong>メタディスクリプション：<\/strong>.*?<\/p>/gs, match => `<div style="display: none;">${match}</div>`);
       htmlContent = htmlContent.replace(/<p><strong>ターゲットキーワード：<\/strong>.*?<\/p>/gs, match => `<div style="display: none;">${match}</div>`);
       
-      const finalHTML = headerHTML + htmlContent + footerHTML;
+      const finalHTML = getHeaderHTML(docTitle, metaDesc) + htmlContent + footerHTML;
       
       const outFilePath = filePath.replace('.md', '.html');
       fs.writeFileSync(outFilePath, finalHTML, 'utf-8');
