@@ -1,3 +1,5 @@
+import logoUrl from '../assets/logo.webp'
+
 /**
  * Renders the site header.
  * @param {Object} options
@@ -29,7 +31,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
   return `
     <header id="header"${fixed ? ' class="scrolled"' : ''}>
       <div class="header-container">
-        <div class="logo"><a href="/"><img src="/src/assets/logo.webp" alt="Pavilion Damansara Heights Logo" style="height: 50px; display: block; ${logoFilter}" class="header-logo-img" /></a></div>
+        <div class="logo"><a href="/"><img src="${logoUrl}" alt="Pavilion Damansara Heights Logo" style="height: 50px; display: block; ${logoFilter}" class="header-logo-img" /></a></div>
         ${nav}
         <div class="hamburger-menu" id="hamburgerMenu">
           <span></span>

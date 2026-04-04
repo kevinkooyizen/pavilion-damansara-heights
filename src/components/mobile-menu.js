@@ -1,3 +1,5 @@
+import logoUrl from '../assets/logo.webp'
+
 /**
  * Renders the mobile menu drawer.
  * @param {Object} options
@@ -11,7 +13,7 @@ export function renderMobileMenu({ showArticlesLink = false } = {}) {
   return `
     <div class="mobile-menu" id="mobileMenu">
       <div class="mobile-menu-header">
-        <div class="logo"><a href="/"><img src="/src/assets/logo.webp" alt="Pavilion Damansara Heights" style="height: 40px; display: block; filter: brightness(0) invert(1);" /></a></div>
+        <div class="logo"><a href="/"><img src="${logoUrl}" alt="Pavilion Damansara Heights" style="height: 40px; display: block; filter: brightness(0) invert(1);" /></a></div>
         <button class="close-menu" id="closeMenu">✕</button>
       </div>
       <div class="mobile-menu-body">
