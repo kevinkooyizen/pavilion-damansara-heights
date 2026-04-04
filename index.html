@@ -32,57 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Sticky Header -->
-    <header id="header">
-      <div class="header-container">
-        <div class="logo"><a href="/"><img src="/src/assets/logo.webp" alt="Pavilion Damansara Heights Logo" style="height: 50px; display: block; filter: brightness(0) invert(1);" class="header-logo-img" /></a></div>
-        <nav class="nav-links">
-          <a href="#about" data-i18n="nav_about">概要</a>
-          <a href="#amenities" data-i18n="nav_facilities">施設</a>
-          <a href="#floorplan" data-i18n="nav_floorplans">間取り図</a>
-          <a href="#location" data-i18n="nav_location">所在地</a>
-        </nav>
-        <div class="nav-actions">
-          <div class="dropdown">
-            <button class="btn btn-outline lang-btn" style="color: inherit; border-color: inherit;">日本語 ▾</button>
-            <div class="dropdown-content">
-              <a href="#" data-lang="ja">日本語</a>
-              <a href="#" data-lang="en">English</a>
-            </div>
-          </div>
-          <button class="btn btn-gold" data-i18n="nav_book">内覧予約</button>
-          <button class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)" data-i18n="nav_call">📞 今すぐ電話</button>
-        </div>
-        <div class="hamburger-menu" id="hamburgerMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </header>
-
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu-header">
-        <div class="logo"><a href="/"><img src="/src/assets/logo.webp" alt="Pavilion Damansara Heights Logo" style="height: 40px; display: block; filter: brightness(0) invert(1);" /></a></div>
-        <button class="close-menu" id="closeMenu">✕</button>
-      </div>
-      <div class="mobile-menu-body">
-        <a href="#about" class="mobile-nav-link" data-i18n="nav_about">概要</a>
-        <a href="#amenities" class="mobile-nav-link" data-i18n="nav_facilities">施設</a>
-        <a href="#floorplan" class="mobile-nav-link" data-i18n="nav_floorplans">間取り図</a>
-        <div class="mobile-lang-select">
-          <span data-lang="ja" class="mobile-lang-btn active">日本語</span>
-          <span data-lang="en" class="mobile-lang-btn">English</span>
-        </div>
-        <div class="mobile-menu-actions">
-          <button class="btn btn-gold w-100" style="padding: 15px 0" data-i18n="nav_book">内覧予約</button>
-          <button class="btn btn-dark-outline w-100" style="padding: 15px 0" data-i18n="nav_call">📞 今すぐ電話</button>
-          <button class="btn btn-whatsapp w-100" style="padding: 15px 0">WHATSAPP</button>
-          <button class="btn btn-line w-100" style="padding: 15px 0">LINE</button>
-        </div>
-      </div>
-    </div>
+    <div id="header-slot"></div>
 
     <div id="app">
       <!-- Hero Section -->

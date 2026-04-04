@@ -1,6 +1,14 @@
 import './style.css'
+import { renderHeader } from './components/header.js'
+import { renderMobileMenu, initMobileMenu } from './components/mobile-menu.js'
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Inject shared components
+  const headerSlot = document.getElementById('header-slot');
+  if (headerSlot) {
+    headerSlot.outerHTML = renderHeader({ fixed: false, full: true }) + renderMobileMenu();
+  }
+
   // Sticky header
   const header = document.getElementById('header');
   const backToTop = document.getElementById('backToTop');
@@ -208,40 +216,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Mobile Menu Logic
-  const hamburgerMenu = document.getElementById('hamburgerMenu');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeMenu = document.getElementById('closeMenu');
+  initMobileMenu();
 
-  if (hamburgerMenu && mobileMenu && closeMenu) {
-    hamburgerMenu.addEventListener('click', () => {
-      mobileMenu.classList.add('open');
-    });
+  // Mobile Language logic
+  document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      const text = btn.textContent;
+      setLanguage(lang);
 
-    closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-    });
+      // update desktop
+      langBtn.innerHTML = text + ' ▾';
 
-    // Close when clicking a link
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-      });
+      // update mobile active state
+      document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
     });
-
-    // Mobile Language Language logic
-    document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const lang = btn.getAttribute('data-lang');
-        const text = btn.textContent;
-        setLanguage(lang);
-        
-        // update desktop
-        langBtn.innerHTML = text + ' ▾';
-        
-        // update mobile active state
-        document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-  }
+  });
 });
