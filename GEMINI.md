@@ -1,9 +1,11 @@
-# Pavilion Imperial Residences - Replica
+> [!IMPORTANT]
+> **Synced Documents**: `CLAUDE.md` and `GEMINI.md` must always be kept in sync. Any updates to project architecture, tech stack, or rules should be reflected in both files to ensure consistency across different AI assistants.
 
-A pixel-perfect, premium web replication of the Pavilion Imperial Residences luxury real estate website.
+# Pavilion Damansara Heights
+
+A pixel-perfect, premium website of Pavilion Damansara Heights luxury real estate.
 
 ## Context
-This project was initiated as a frontend replication exercise to capture the sophisticated layout, scroll-reveal micro-animations, and high-end aesthetics (Champagne Gold `#c5a059`, Charcoal `#1f2229`) of the original site. 
 The application leverages an extremely lightweight Vanilla JS + HTML/CSS structure bundled with Vite.
 
 ## Tech Stack
@@ -11,27 +13,35 @@ The application leverages an extremely lightweight Vanilla JS + HTML/CSS structu
 - Vite (fast local development & build tool)
 
 ## Key Project Architecture
-- `index.html`: The core structured document handling the layout grid, image blocks, semantic containers, and the mobile responsive drawer overlay.
-- `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters including CSS media queries for desktop parity.
-- `src/main.js`: Adds interactivity, primarily managing sticky header classes, the desktop/mobile language switchers, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
-- `public/images/`: Highly optimized, raw static imagery replicating the high-end visuals.
+- `index.html`: The core Japanese homepage (default). 
+- `index-en.html`: The English version of the homepage.
+- `articles.html`: The Japanese article index.
+- `articles-en.html`: The English article index.
+- `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters.
+- `src/main.js`: Adds interactivity, primarily managing sticky header classes, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
+- `src/components/header.js`: Dynamic component that manages cross-linking between localized versions of pages using `hreflang` tags.
+- `public/images/`: Highly optimized, raw static imagery.
 
 ## Articles System
 The project includes a compilation script that parses Markdown insights into fully-styled standalone HTML pages. 
 - **Compilation Engine**: A custom Node.js script (`scripts/build-articles.js`) utilizes `marked` to build pristine `.html` files.
-  - **SEO Metatags**: The compiler automatically uses regex to parse SEO tags like `**Meta description:**` and `**Target keywords:**` into `<div style="display: none;">` to keep them invisible to human readers while remaining crawlable.
-  - **Internal Linking**: The compiler systematically intercepts SEO-friendly slugs (e.g. `/japanese-buy-property-malaysia-rules`) mapping them to the specific output route paths (e.g. `/articles/01-C1-rules-costs-en.html`).
-- **Index UI**: They are all linked cohesively inside `articles.html` and placed in the main navigation.
-- **Slugs / URLs**:
-  - `malaysia-property-guide-japanese-buyers.html`
-  - `japanese-buy-property-malaysia-rules.html`
-  - `mont-kiara-japanese-expat-guide.html`
-  - `malaysia-mm2h-property-japanese.html`
-  - `klang-valley-buy-vs-rent-japanese-expat.html`
-  - `klang-valley-best-areas-japanese-families.html`
-  - `malaysia-property-investment-japanese-buyers.html`
-  - `guaranteed-return-rate-malaysia-property.html`
-  *(Note: See the `/articles` folder for their Japanese-named counterparts).*
+  - **SEO Metatags**: The compiler automatically parses SEO tags into `<div style="display: none;">`.
+  - **Internal Linking**: The compiler maps SEO-friendly slugs to the specific output route paths.
+  - **Hreflang**: The compiler injects bidirectional `<link rel="alternate" hreflang="en/ja">` tags into each article.
+  - **Language Detection**: Articles under `articles/ja/` use `<html lang="ja">`, English articles use `<html lang="en">`.
+- **Index UI**: Linked cohesively inside `articles.html` (Japanese) and `articles-en.html` (English).
+
+### Article Slugs
+| English (under `/articles/`) | Japanese (under `/articles/ja/`) |
+| :--- | :--- |
+| `malaysia-property-guide-japanese-buyers` | `malaysia-fudosan-kounyu-kanzen-guide` |
+| `japanese-buy-property-malaysia-rules` | `nihonjin-malaysia-fudosan-kounyu-rule` |
+| `mont-kiara-japanese-expat-guide` | `mont-kiara-nihonjin-guide` |
+| `malaysia-mm2h-property-japanese` | `malaysia-mm2h-fudosan-nihonjin` |
+| `klang-valley-buy-vs-rent-japanese-expat` | `klang-valley-kounyu-vs-chintai` |
+| `klang-valley-best-areas-japanese-families` | `klang-valley-nihonjin-kazoku-area` |
+| `malaysia-property-investment-japanese-buyers` | `malaysia-fudosan-toshi-nihonjin` |
+| `guaranteed-return-rate-malaysia-property` | `malaysia-fudosan-rimawari-hosho-grr` |
 
 ## Development
 

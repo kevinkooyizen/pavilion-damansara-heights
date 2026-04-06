@@ -7,59 +7,98 @@ import logoUrl from '../assets/logo.webp'
  * @param {boolean} options.full  - If true, render full nav + actions (homepage only)
  */
 export function renderHeader({ fixed = false, full = false } = {}) {
+  const isEn = document.documentElement.lang === 'en';
+  
+  // Translation simple dict for header items
+  const dict = isEn ? {
+    about: "Overview",
+    facilities: "Facilities",
+    floorplans: "Floor Plans",
+    location: "Location",
+    book: "Book Viewing",
+    call: "📞 Call Now",
+    articles: "Insights",
+    langText: "English",
+    home: "/index-en.html",
+    homeLink: "/index-en.html",
+    articlesLink: "/articles-en.html"
+  } : {
+    about: "概要",
+    facilities: "施設",
+    floorplans: "間取り図",
+    location: "所在地",
+    book: "内覧予約",
+    call: "📞 今すぐ電話",
+    articles: "記事",
+    langText: "日本語",
+    home: "/",
+    homeLink: "/",
+    articlesLink: "/articles.html"
+  };
+
+  // Detect other language URLs from hreflang or fallback
+  const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/index.html';
+  const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/index-en.html';
+
   const navLinks = full ? `
     <nav class="nav-links">
-      <a href="#about" data-i18n="nav_about">概要</a>
-      <a href="#amenities" data-i18n="nav_facilities">施設</a>
-      <a href="#floorplan" data-i18n="nav_floorplans">間取り図</a>
-      <a href="#location" data-i18n="nav_location">所在地</a>
-    </nav>` : '';
+      <a href="${dict.homeLink}#about">${dict.about}</a>
+      <a href="${dict.homeLink}#amenities">${dict.facilities}</a>
+      <a href="${dict.homeLink}#floorplan">${dict.floorplans}</a>
+      <a href="${dict.homeLink}#location">${dict.location}</a>
+    </nav>` : `
+    <nav class="nav-links">
+      <a href="${dict.homeLink}">${dict.home === '/' ? 'ホーム' : 'Home'}</a>
+      <a href="${dict.articlesLink}">${dict.articles}</a>
+    </nav>`;
 
-  const navActions = full ? `
+  const navActions = `
     <div class="nav-actions">
       <div class="dropdown">
-        <button class="btn btn-outline lang-btn" style="color: inherit; border-color: inherit;">日本語 ▾</button>
+        <button class="btn btn-outline lang-btn" style="color: inherit; border-color: inherit;">${dict.langText} ▾</button>
         <div class="dropdown-content">
-          <a href="#" data-lang="ja">日本語</a>
-          <a href="#" data-lang="en">English</a>
+          <a href="${jaHref}">日本語</a>
+          <a href="${enHref}">English</a>
         </div>
       </div>
-      <button class="btn btn-gold" data-i18n="nav_book">内覧予約</button>
-      <button class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)" data-i18n="nav_call">📞 今すぐ電話</button>
-    </div>` : '';
+      <button class="btn btn-gold">${dict.book}</button>
+      <button class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)">${dict.call}</button>
+    </div>`;
 
-  const hamburger = full ? `
+  const hamburger = `
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
-    </button>` : '';
+    </button>`;
 
-  const mobileMenu = full ? `
+  const mobileMenu = `
     <div class="mobile-menu" id="mobile-menu">
       <nav class="mobile-menu-links">
-        <a href="#about" data-i18n="nav_about">概要</a>
-        <a href="#amenities" data-i18n="nav_facilities">施設</a>
-        <a href="#floorplan" data-i18n="nav_floorplans">間取り図</a>
-        <a href="#location" data-i18n="nav_location">所在地</a>
+        <a href="${dict.homeLink}">${dict.home === '/' ? 'ホーム' : 'Home'}</a>
+        <a href="${dict.articlesLink}">${dict.articles}</a>
+        <a href="${dict.homeLink}#about">${dict.about}</a>
+        <a href="${dict.homeLink}#amenities">${dict.facilities}</a>
+        <a href="${dict.homeLink}#floorplan">${dict.floorplans}</a>
+        <a href="${dict.homeLink}#location">${dict.location}</a>
       </nav>
       <div class="mobile-menu-actions">
         <div class="dropdown mobile-dropdown">
-          <button class="btn btn-outline lang-btn" style="color: var(--charcoal); border-color: #ddd;">日本語 ▾</button>
+          <button class="btn btn-outline lang-btn" style="color: var(--charcoal); border-color: #ddd;">${dict.langText} ▾</button>
           <div class="dropdown-content">
-            <a href="#" data-lang="ja">日本語</a>
-            <a href="#" data-lang="en">English</a>
+            <a href="${jaHref}">日本語</a>
+            <a href="${enHref}">English</a>
           </div>
         </div>
-        <button class="btn btn-gold btn-large" style="width: 100%;" data-i18n="nav_book">内覧予約</button>
-        <button class="btn btn-outline btn-large" style="width: 100%; border-color: var(--gold); color: var(--gold);" data-i18n="nav_call">📞 今すぐ電話</button>
+        <button class="btn btn-gold btn-large" style="width: 100%;">${dict.book}</button>
+        <button class="btn btn-outline btn-large" style="width: 100%; border-color: var(--gold); color: var(--gold);">${dict.call}</button>
       </div>
-    </div>` : '';
+    </div>`;
 
   const logoFilter = fixed ? '' : 'filter: brightness(0) invert(1);';
 
   return `
     <header id="header"${fixed ? ' class="scrolled"' : ''}>
       <div class="header-container">
-        <div class="logo"><a href="/"><img src="${logoUrl}" alt="Pavilion Damansara Heights Logo" style="height: 50px; display: block; ${logoFilter}" class="header-logo-img" /></a></div>
+        <div class="logo"><a href="${dict.homeLink}"><img src="${logoUrl}" alt="Pavilion Damansara Heights Logo" style="height: 50px; display: block; ${logoFilter}" class="header-logo-img" /></a></div>
         ${navLinks}
         <div class="nav-right">
           ${navActions}

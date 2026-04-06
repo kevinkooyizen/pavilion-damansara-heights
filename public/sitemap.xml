@@ -3,10 +3,30 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pavilion.asianews.blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pavilion.asianews.blog/index-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/"/>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://pavilion.asianews.blog/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/articles.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pavilion.asianews.blog/articles-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/articles.html"/>
     <priority>0.8</priority>
   </url>
 

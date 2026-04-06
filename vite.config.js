@@ -7,10 +7,15 @@ const root = resolve(__dirname);
 const articlesPath = resolve(root, 'articles');
 
 const getHtmlEntries = () => {
-  const entries = {
-    main: resolve(root, 'index.html'),
-    articlesIndex: resolve(root, 'articles.html')
-  };
+  const entries = {};
+
+  // Root level HTML files (index.html, index-en.html, articles.html, articles-en.html, etc.)
+  fs.readdirSync(root).forEach(file => {
+    if (file.endsWith('.html')) {
+      const name = file.replace('.html', '');
+      entries[name] = resolve(root, file);
+    }
+  });
 
   if (fs.existsSync(articlesPath)) {
     const files = fs.readdirSync(articlesPath);
