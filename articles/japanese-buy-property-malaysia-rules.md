@@ -8,7 +8,7 @@
 
 The short answer is yes. Japanese nationals can legally purchase and own property in Malaysia in their own name, without needing a local partner or company structure. Malaysia is one of the very few countries in Southeast Asia where foreign freehold ownership is genuinely permitted. However, there are rules you need to understand before you buy — on minimum prices, property types, government approvals, and costs. This article covers all of them clearly.
 
-For a broader overview of the buying process and the best areas, see our [Complete Guide to Buying Property in Klang Valley as a Japanese Buyer](/klang-valley-property-guide-japanese).
+For a broader overview of the buying process and the best areas, see our [Complete Guide to Buying Property in Klang Valley as a Japanese Buyer](/malaysia-property-guide-japanese-buyers).
 
 ---
 

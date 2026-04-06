@@ -10,7 +10,7 @@ Choosing where to live in the Klang Valley is one of the most consequential deci
 
 The good news is that the Klang Valley has several excellent options for Japanese families — and this guide compares them honestly, so you can find the one that fits your specific needs.
 
-For a complete overview of the buying process and rules, visit our [Complete Guide to Buying Property in Klang Valley](/klang-valley-property-guide-japanese). For details on MM2H residency for long-stay families, see: [MM2H Visa + Property Purchase — Complete Guide](/malaysia-mm2h-property-japanese).
+For a complete overview of the buying process and rules, visit our [Complete Guide to Buying Property in Klang Valley](/malaysia-property-guide-japanese-buyers). For details on MM2H residency for long-stay families, see: [MM2H Visa + Property Purchase — Complete Guide](/malaysia-mm2h-property-japanese).
 
 ---
 

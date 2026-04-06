@@ -10,7 +10,7 @@ For Japanese nationals who want to live in Malaysia long-term — whether for re
 
 This guide covers the restructured MM2H programme in full — all three tiers, who qualifies, how to apply, and how it changes your property purchase.
 
-For a broader overview of the property buying process, see our [Complete Guide to Buying Property in Klang Valley as a Japanese Buyer](/klang-valley-property-guide-japanese). For the rules and costs of buying without MM2H, see: [Can Japanese Buy Property in Malaysia?](/japanese-buy-property-malaysia-rules).
+For a broader overview of the property buying process, see our [Complete Guide to Buying Property in Klang Valley as a Japanese Buyer](/malaysia-property-guide-japanese-buyers). For the rules and costs of buying without MM2H, see: [Can Japanese Buy Property in Malaysia?](/japanese-buy-property-malaysia-rules).
 
 ---
 

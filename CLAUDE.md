@@ -20,18 +20,29 @@ The application leverages an extremely lightweight Vanilla JS + HTML/CSS structu
 The project includes a compilation script that parses Markdown insights into fully-styled standalone HTML pages. 
 - **Compilation Engine**: A custom Node.js script (`scripts/build-articles.js`) utilizes `marked` to build pristine `.html` files.
   - **SEO Metatags**: The compiler automatically uses regex to parse SEO tags like `**Meta description:**` and `**Target keywords:**` into `<div style="display: none;">` to keep them invisible to human readers while remaining crawlable.
-  - **Internal Linking**: The compiler systematically intercepts SEO-friendly slugs (e.g. `/japanese-buy-property-malaysia-rules`) mapping them to the specific output route paths (e.g. `/articles/01-C1-rules-costs-en.html`).
+  - **Internal Linking**: The compiler systematically intercepts SEO-friendly slugs (e.g. `/japanese-buy-property-malaysia-rules`) mapping them to the specific output route paths (e.g. `/articles/japanese-buy-property-malaysia-rules.html`).
+  - **Hreflang**: The compiler injects bidirectional `<link rel="alternate" hreflang>` tags (en, ja, x-default) into each article using a pair map defined in `ARTICLE_PAIRS`.
+  - **Language Detection**: Articles under `articles/ja/` are built with `<html lang="ja">`, all others with `<html lang="en">`.
 - **Index UI**: They are all linked cohesively inside `articles.html` and placed in the main navigation.
 - **Slugs / URLs**:
-  - `malaysia-property-guide-japanese-buyers.html`
-  - `japanese-buy-property-malaysia-rules.html`
-  - `mont-kiara-japanese-expat-guide.html`
-  - `malaysia-mm2h-property-japanese.html`
-  - `klang-valley-buy-vs-rent-japanese-expat.html`
-  - `klang-valley-best-areas-japanese-families.html`
-  - `malaysia-property-investment-japanese-buyers.html`
-  - `guaranteed-return-rate-malaysia-property.html`
-  *(Note: See the `/articles` folder for their Japanese-named counterparts).*
+  - English (under `/articles/`):
+    - `malaysia-property-guide-japanese-buyers.html`
+    - `japanese-buy-property-malaysia-rules.html`
+    - `mont-kiara-japanese-expat-guide.html`
+    - `malaysia-mm2h-property-japanese.html`
+    - `klang-valley-buy-vs-rent-japanese-expat.html`
+    - `klang-valley-best-areas-japanese-families.html`
+    - `malaysia-property-investment-japanese-buyers.html`
+    - `guaranteed-return-rate-malaysia-property.html`
+  - Japanese (under `/articles/ja/`, romaji slugs):
+    - `malaysia-fudosan-kounyu-kanzen-guide.html`
+    - `nihonjin-malaysia-fudosan-kounyu-rule.html`
+    - `mont-kiara-nihonjin-guide.html`
+    - `malaysia-mm2h-fudosan-nihonjin.html`
+    - `klang-valley-kounyu-vs-chintai.html`
+    - `klang-valley-nihonjin-kazoku-area.html`
+    - `malaysia-fudosan-toshi-nihonjin.html`
+    - `malaysia-fudosan-rimawari-hosho-grr.html`
 
 ## Development
 

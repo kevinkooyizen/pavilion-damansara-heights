@@ -80,7 +80,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C1 — Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs
 
 **Slug:** `/japanese-buy-property-malaysia-rules`
-**日本語スラッグ：** `/日本人-マレーシア-不動産-購入-ルール`
+**日本語スラッグ：** `/ja/nihonjin-malaysia-fudosan-kounyu-rule`
 
 #### Target Keywords
 | Language | Keyword | Intent |
@@ -119,7 +119,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C2 — Mont Kiara: The Japanese Expat's Neighbourhood Guide
 
 **Slug:** `/mont-kiara-japanese-expat-guide`
-**日本語スラッグ：** `/モントキアラ-日本人-ガイド`
+**日本語スラッグ：** `/ja/mont-kiara-nihonjin-guide`
 
 #### Target Keywords
 | Language | Keyword | Intent |
@@ -158,7 +158,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C3 — MM2H Visa + Property Purchase: Complete Guide for Japanese Applicants
 
 **Slug:** `/malaysia-mm2h-property-japanese`
-**日本語スラッグ：** `/マレーシア-MM2H-不動産-日本人`
+**日本語スラッグ：** `/ja/malaysia-mm2h-fudosan-nihonjin`
 
 #### Target Keywords
 | Language | Keyword | Intent |
@@ -197,7 +197,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C4 — Buy vs Rent in Klang Valley: A Guide for Japanese Work Expats
 
 **Slug:** `/klang-valley-buy-vs-rent-japanese-expat`
-**日本語スラッグ：** `/クランバレー-購入-賃貸-日本人-駐在員`
+**日本語スラッグ：** `/ja/klang-valley-kounyu-vs-chintai`
 
 #### Target Keywords
 | Language | Keyword | Intent |
@@ -236,7 +236,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C5 — Best Areas in Klang Valley for Japanese Families Moving from Japan
 
 **Slug:** `/klang-valley-best-areas-japanese-families`
-**日本語スラッグ：** `/クランバレー-日本人-家族-住みやすいエリア`
+**日本語スラッグ：** `/ja/klang-valley-nihonjin-kazoku-area`
 
 #### Target Keywords
 | Language | Keyword | Intent |
@@ -284,7 +284,7 @@ This plan follows a **Pillar + Cluster** model:
 ### C6 — Malaysia Property Investment Guide for Japanese Buyers: Yields, Growth & Exit
 
 **Slug:** `/malaysia-property-investment-japanese-buyers`
-**日本語スラッグ：** `/マレーシア-不動産投資-日本人-利回り`
+**日本語スラッグ：** `/ja/malaysia-fudosan-toshi-nihonjin`
 
 #### Target Keywords
 | Language | Keyword | Intent |

@@ -20,6 +20,15 @@ const getHtmlEntries = () => {
         entries[`article_${name}`] = resolve(articlesPath, file);
       }
     });
+
+    const jaPath = resolve(articlesPath, 'ja');
+    if (fs.existsSync(jaPath)) {
+      fs.readdirSync(jaPath).forEach(file => {
+        if (file.endsWith('.html')) {
+          entries[`article_ja_${file.replace('.html', '')}`] = resolve(jaPath, file);
+        }
+      });
+    }
   }
   return entries;
 };

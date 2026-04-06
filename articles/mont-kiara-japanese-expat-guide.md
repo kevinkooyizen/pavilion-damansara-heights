@@ -10,7 +10,7 @@ If you ask any Japanese person who has lived in Kuala Lumpur which neighbourhood
 
 This guide covers everything you need to know about Mont Kiara: the community, the schools, the amenities, the property market, and who the area suits best.
 
-For the legal rules and minimum prices for buying in Malaysia, see: [Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs](/japanese-buy-property-malaysia-rules). For a complete overview of the buying process, visit our [Complete Guide to Buying Property in Klang Valley](/klang-valley-property-guide-japanese).
+For the legal rules and minimum prices for buying in Malaysia, see: [Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs](/japanese-buy-property-malaysia-rules). For a complete overview of the buying process, visit our [Complete Guide to Buying Property in Klang Valley](/malaysia-property-guide-japanese-buyers).
 
 ---
 
