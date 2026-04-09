@@ -21,6 +21,9 @@ const ARTICLE_PAIRS = {
   'klang-valley-best-areas-japanese-families': 'klang-valley-nihonjin-kazoku-area',
   'malaysia-property-investment-japanese-buyers': 'malaysia-fudosan-toshi-nihonjin',
   'guaranteed-return-rate-malaysia-property': 'malaysia-fudosan-rimawari-hosho-grr',
+  'kuala-lumpur-property-guide-japanese-buyers': 'kuala-lumpur-fudosan-guide-nihonjin',
+  'klcc-bukit-bintang-property-japanese-buyers': 'klcc-bukit-bintang-fudosan-nihonjin',
+  'mont-kiara-best-condos-japanese-buyers': 'mont-kiara-best-condo-nihonjin',
 };
 
 const JA_TO_EN = Object.fromEntries(

@@ -101,7 +101,7 @@ Some of the well-regarded condominiums in Mont Kiara that have historically attr
 
 **Verve Suites** — Smaller units, popular with investors and younger professionals, offering high rental yields.
 
-This is not a recommendation of any specific development. Always conduct your own due diligence.
+This is not a recommendation of any specific development. Always conduct your own due diligence. For a detailed development-by-development comparison with pricing and rental data, see: [Top Mont Kiara Condos for Japanese Buyers](/mont-kiara-best-condos-japanese-buyers).
 
 ### Rental Yields
 
