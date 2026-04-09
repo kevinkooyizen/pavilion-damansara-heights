@@ -4,12 +4,12 @@ import fs from 'fs';
 import { commonHeadTags } from './src/head-common.js';
 
 const root = resolve(__dirname);
-const articlesPath = resolve(root, 'articles');
+const enPath = resolve(root, 'en');
 
 const getHtmlEntries = () => {
   const entries = {};
 
-  // Root level HTML files (index.html, index-en.html, articles.html, articles-en.html, etc.)
+  // Root level HTML files (index.html, articles.html, etc.)
   fs.readdirSync(root).forEach(file => {
     if (file.endsWith('.html')) {
       const name = file.replace('.html', '');
@@ -17,23 +17,34 @@ const getHtmlEntries = () => {
     }
   });
 
-  if (fs.existsSync(articlesPath)) {
-    const files = fs.readdirSync(articlesPath);
-    files.forEach(file => {
+  // English pages (en/index.html, en/articles.html)
+  if (fs.existsSync(enPath)) {
+    fs.readdirSync(enPath).forEach(file => {
       if (file.endsWith('.html')) {
-        const name = file.replace('.html', '');
-        entries[`article_${name}`] = resolve(articlesPath, file);
+        entries[`en_${file.replace('.html', '')}`] = resolve(enPath, file);
       }
     });
 
-    const jaPath = resolve(articlesPath, 'ja');
-    if (fs.existsSync(jaPath)) {
-      fs.readdirSync(jaPath).forEach(file => {
-        if (file.endsWith('.html')) {
-          entries[`article_ja_${file.replace('.html', '')}`] = resolve(jaPath, file);
-        }
-      });
-    }
+  }
+
+  // English articles (en/articles/*.html)
+  const enArticlesPath = resolve(enPath, 'articles');
+  if (fs.existsSync(enArticlesPath)) {
+    fs.readdirSync(enArticlesPath).forEach(file => {
+      if (file.endsWith('.html')) {
+        entries[`en_article_${file.replace('.html', '')}`] = resolve(enArticlesPath, file);
+      }
+    });
+  }
+
+  // Japanese articles (ja/articles/*.html)
+  const jaArticlesPath = resolve(root, 'ja', 'articles');
+  if (fs.existsSync(jaArticlesPath)) {
+    fs.readdirSync(jaArticlesPath).forEach(file => {
+      if (file.endsWith('.html')) {
+        entries[`ja_article_${file.replace('.html', '')}`] = resolve(jaArticlesPath, file);
+      }
+    });
   }
   return entries;
 };

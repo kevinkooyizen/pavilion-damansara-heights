@@ -14,9 +14,9 @@ The application leverages an extremely lightweight Vanilla JS + HTML/CSS structu
 
 ## Key Project Architecture
 - `index.html`: The core Japanese homepage (default). 
-- `index-en.html`: The English version of the homepage.
+- `en/index.html`: The English version of the homepage (served at `/en/`).
 - `articles.html`: The Japanese article index.
-- `articles-en.html`: The English article index.
+- `en/articles.html`: The English article index (served at `/en/articles.html`).
 - `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters.
 - `src/main.js`: Adds interactivity, primarily managing sticky header classes, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
 - `src/components/header.js`: Dynamic component that manages cross-linking between localized versions of pages using `hreflang` tags.
@@ -28,11 +28,11 @@ The project includes a compilation script that parses Markdown insights into ful
   - **SEO Metatags**: The compiler automatically parses SEO tags into `<div style="display: none;">`.
   - **Internal Linking**: The compiler maps SEO-friendly slugs to the specific output route paths.
   - **Hreflang**: The compiler injects bidirectional `<link rel="alternate" hreflang="en/ja">` tags into each article.
-  - **Language Detection**: Articles under `articles/ja/` use `<html lang="ja">`, English articles use `<html lang="en">`.
-- **Index UI**: Linked cohesively inside `articles.html` (Japanese) and `articles-en.html` (English).
+  - **Language Detection**: Articles under `ja/articles/` use `<html lang="ja">`, English articles use `<html lang="en">`.
+- **Index UI**: Linked cohesively inside `articles.html` (Japanese) and `en/articles.html` (English).
 
 ### Article Slugs
-| English (under `/articles/`) | Japanese (under `/articles/ja/`) |
+| English (under `/en/articles/`) | Japanese (under `/ja/articles/`) |
 | :--- | :--- |
 | `malaysia-property-guide-japanese-buyers` | `malaysia-fudosan-kounyu-kanzen-guide` |
 | `japanese-buy-property-malaysia-rules` | `nihonjin-malaysia-fudosan-kounyu-rule` |

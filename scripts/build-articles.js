@@ -7,7 +7,8 @@ import { commonHeadTags } from '../src/head-common.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, '..');
-const articlesDir = path.join(rootDir, 'articles');
+const enArticlesDir = path.join(rootDir, 'en', 'articles');
+const jaArticlesDir = path.join(rootDir, 'ja', 'articles');
 
 const SITE_BASE = 'https://pavilion.asianews.blog';
 
@@ -36,8 +37,8 @@ function getHreflangTags(slug, lang) {
     jaSlug = ARTICLE_PAIRS[slug];
   }
   if (!enSlug || !jaSlug) return '';
-  const enUrl = `${SITE_BASE}/articles/${enSlug}.html`;
-  const jaUrl = `${SITE_BASE}/articles/ja/${jaSlug}.html`;
+  const enUrl = `${SITE_BASE}/en/articles/${enSlug}.html`;
+  const jaUrl = `${SITE_BASE}/ja/articles/${jaSlug}.html`;
   return `    <link rel="alternate" hreflang="en" href="${enUrl}" />\n    <link rel="alternate" hreflang="ja" href="${jaUrl}" />\n    <link rel="alternate" hreflang="x-default" href="${enUrl}" />`;
 }
 
@@ -53,7 +54,7 @@ ${hreflangTags}
   <body>
     <div id="header-slot"></div>
     <div class="article-page">
-      <a href="/articles.html" class="back-link">${lang === 'ja' ? '← インサイト一覧に戻る' : '← Back to Insights'}</a>
+      <a href="${lang === 'ja' ? '/articles.html' : '/en/articles.html'}" class="back-link">${lang === 'ja' ? '← インサイト一覧に戻る' : '← Back to Insights'}</a>
 `;
 
 const shellFooterHTML = `
@@ -89,7 +90,8 @@ function processArticle(filePath, lang) {
   let htmlContent = marked(markdownContent);
 
   // Auto-append .html to any internal cross-reference that starts with / and has no extension
-  htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, 'href="/articles$1.html"');
+  const articlePrefix = lang === 'en' ? '/en/articles' : '/articles';
+  htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, `href="${articlePrefix}$1.html"`);
 
   // Hide SEO metadata from visual rendering but keep in DOM for crawlers
   htmlContent = htmlContent.replace(/<p><strong>Meta description:<\/strong>.*?<\/p>/gs, match => `<div style="display: none;">${match}</div>`);
@@ -101,25 +103,29 @@ function processArticle(filePath, lang) {
   const hreflangTags = getHreflangTags(slug, lang);
   const finalHTML = getShellHTML(docTitle, metaDesc, lang, hreflangTags) + htmlContent + shellFooterHTML;
 
-  const outFilePath = filePath.replace('.md', '.html');
+  let outFilePath;
+  const langArticlesDir = path.join(rootDir, lang === 'en' ? 'en' : 'ja', 'articles');
+  if (!fs.existsSync(langArticlesDir)) fs.mkdirSync(langArticlesDir, { recursive: true });
+  outFilePath = path.join(langArticlesDir, path.basename(filePath).replace('.md', '.html'));
   fs.writeFileSync(outFilePath, finalHTML, 'utf-8');
-  console.log(`Successfully built ${lang === 'ja' ? 'ja/' : ''}${path.basename(outFilePath)}`);
+  console.log(`Successfully built ${lang === 'ja' ? 'ja/' : 'en/'}${path.basename(outFilePath)}`);
 }
 
 function buildArticles() {
-  // Build EN articles (flat in articles/)
-  fs.readdirSync(articlesDir).forEach(file => {
-    if (file.endsWith('.md')) {
-      processArticle(path.join(articlesDir, file), 'en');
-    }
-  });
-
-  // Build JA articles (in articles/ja/)
-  const jaDir = path.join(articlesDir, 'ja');
-  if (fs.existsSync(jaDir)) {
-    fs.readdirSync(jaDir).forEach(file => {
+  // Build EN articles (en/articles/)
+  if (fs.existsSync(enArticlesDir)) {
+    fs.readdirSync(enArticlesDir).forEach(file => {
       if (file.endsWith('.md')) {
-        processArticle(path.join(jaDir, file), 'ja');
+        processArticle(path.join(enArticlesDir, file), 'en');
+      }
+    });
+  }
+
+  // Build JA articles (ja/articles/)
+  if (fs.existsSync(jaArticlesDir)) {
+    fs.readdirSync(jaArticlesDir).forEach(file => {
+      if (file.endsWith('.md')) {
+        processArticle(path.join(jaArticlesDir, file), 'ja');
       }
     });
   }

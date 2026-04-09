@@ -19,9 +19,9 @@ export function renderHeader({ fixed = false, full = false } = {}) {
     call: "📞 Call Now",
     articles: "Insights",
     langText: "English",
-    home: "/index-en.html",
-    homeLink: "/index-en.html",
-    articlesLink: "/articles-en.html"
+    home: "/en/",
+    homeLink: "/en/",
+    articlesLink: "/en/articles.html"
   } : {
     about: "概要",
     facilities: "施設",
@@ -38,7 +38,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
 
   // Detect other language URLs from hreflang or fallback
   const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/index.html';
-  const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/index-en.html';
+  const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/en/';
 
   const navLinks = full ? `
     <nav class="nav-links">

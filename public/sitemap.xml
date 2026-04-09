@@ -4,141 +4,141 @@
   <url>
     <loc>https://pavilion.asianews.blog/</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/index-en.html</loc>
+    <loc>https://pavilion.asianews.blog/en/</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/"/>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://pavilion.asianews.blog/articles.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles-en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/articles.html"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles-en.html</loc>
+    <loc>https://pavilion.asianews.blog/en/articles.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles-en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/articles.html"/>
     <priority>0.8</priority>
   </url>
 
   <!-- Pillar -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/malaysia-property-guide-japanese-buyers.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-property-guide-japanese-buyers.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-kounyu-kanzen-guide.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/malaysia-property-guide-japanese-buyers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-property-guide-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-kounyu-kanzen-guide.html"/>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-kounyu-kanzen-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-property-guide-japanese-buyers.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-kounyu-kanzen-guide.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-kounyu-kanzen-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-property-guide-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-kounyu-kanzen-guide.html"/>
     <priority>0.9</priority>
   </url>
 
   <!-- C1: Rules & Costs -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/japanese-buy-property-malaysia-rules.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/japanese-buy-property-malaysia-rules.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/nihonjin-malaysia-fudosan-kounyu-rule.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/japanese-buy-property-malaysia-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/japanese-buy-property-malaysia-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/nihonjin-malaysia-fudosan-kounyu-rule.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/nihonjin-malaysia-fudosan-kounyu-rule.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/japanese-buy-property-malaysia-rules.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/nihonjin-malaysia-fudosan-kounyu-rule.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/nihonjin-malaysia-fudosan-kounyu-rule.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/japanese-buy-property-malaysia-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/nihonjin-malaysia-fudosan-kounyu-rule.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C2: Mont Kiara -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/mont-kiara-japanese-expat-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/mont-kiara-japanese-expat-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/mont-kiara-nihonjin-guide.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/mont-kiara-japanese-expat-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/mont-kiara-japanese-expat-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/mont-kiara-nihonjin-guide.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/mont-kiara-nihonjin-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/mont-kiara-japanese-expat-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/mont-kiara-nihonjin-guide.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/mont-kiara-nihonjin-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/mont-kiara-japanese-expat-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/mont-kiara-nihonjin-guide.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C3: MM2H -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/malaysia-mm2h-property-japanese.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-mm2h-property-japanese.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-mm2h-fudosan-nihonjin.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/malaysia-mm2h-property-japanese.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-mm2h-property-japanese.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-mm2h-fudosan-nihonjin.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/malaysia-mm2h-fudosan-nihonjin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-mm2h-property-japanese.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-mm2h-fudosan-nihonjin.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/malaysia-mm2h-fudosan-nihonjin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-mm2h-property-japanese.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-mm2h-fudosan-nihonjin.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C4: Buy vs Rent -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/klang-valley-buy-vs-rent-japanese-expat.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/klang-valley-buy-vs-rent-japanese-expat.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/klang-valley-kounyu-vs-chintai.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/klang-valley-buy-vs-rent-japanese-expat.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klang-valley-buy-vs-rent-japanese-expat.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klang-valley-kounyu-vs-chintai.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/klang-valley-kounyu-vs-chintai.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/klang-valley-buy-vs-rent-japanese-expat.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/klang-valley-kounyu-vs-chintai.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/klang-valley-kounyu-vs-chintai.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klang-valley-buy-vs-rent-japanese-expat.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klang-valley-kounyu-vs-chintai.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C5: Family Areas -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/klang-valley-best-areas-japanese-families.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/klang-valley-best-areas-japanese-families.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/klang-valley-nihonjin-kazoku-area.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/klang-valley-best-areas-japanese-families.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klang-valley-best-areas-japanese-families.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klang-valley-nihonjin-kazoku-area.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/klang-valley-nihonjin-kazoku-area.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/klang-valley-best-areas-japanese-families.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/klang-valley-nihonjin-kazoku-area.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/klang-valley-nihonjin-kazoku-area.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klang-valley-best-areas-japanese-families.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klang-valley-nihonjin-kazoku-area.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C6: Investment -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/malaysia-property-investment-japanese-buyers.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-property-investment-japanese-buyers.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-toshi-nihonjin.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/malaysia-property-investment-japanese-buyers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-property-investment-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-toshi-nihonjin.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-toshi-nihonjin.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/malaysia-property-investment-japanese-buyers.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-toshi-nihonjin.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-toshi-nihonjin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/malaysia-property-investment-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-toshi-nihonjin.html"/>
     <priority>0.7</priority>
   </url>
 
   <!-- C7: GRR -->
   <url>
-    <loc>https://pavilion.asianews.blog/articles/guaranteed-return-rate-malaysia-property.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/guaranteed-return-rate-malaysia-property.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-rimawari-hosho-grr.html"/>
+    <loc>https://pavilion.asianews.blog/en/articles/guaranteed-return-rate-malaysia-property.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/guaranteed-return-rate-malaysia-property.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-rimawari-hosho-grr.html"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-rimawari-hosho-grr.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/articles/guaranteed-return-rate-malaysia-property.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/articles/ja/malaysia-fudosan-rimawari-hosho-grr.html"/>
+    <loc>https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-rimawari-hosho-grr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/guaranteed-return-rate-malaysia-property.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-rimawari-hosho-grr.html"/>
     <priority>0.7</priority>
   </url>
 </urlset>
