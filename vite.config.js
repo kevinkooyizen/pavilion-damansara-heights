@@ -5,6 +5,7 @@ import { commonHeadTags } from './src/head-common.js';
 
 const root = resolve(__dirname);
 const enPath = resolve(root, 'en');
+const jaPath = resolve(root, 'ja');
 
 const getHtmlEntries = () => {
   const entries = {};
@@ -25,6 +26,15 @@ const getHtmlEntries = () => {
       }
     });
 
+  }
+
+  // Japanese pages (ja/index.html, ja/articles.html)
+  if (fs.existsSync(jaPath)) {
+    fs.readdirSync(jaPath).forEach(file => {
+      if (file.endsWith('.html')) {
+        entries[`ja_${file.replace('.html', '')}`] = resolve(jaPath, file);
+      }
+    });
   }
 
   // English articles (en/articles/*.html)

@@ -13,10 +13,13 @@ The application leverages an extremely lightweight Vanilla JS + HTML/CSS structu
 - Vite (fast local development & build tool)
 
 ## Key Project Architecture
-- `index.html`: The core Japanese homepage (default). 
-- `en/index.html`: The English version of the homepage (served at `/en/`).
-- `articles.html`: The Japanese article index.
+Every locale lives under its own prefix (`/ja/`, `/en/`). Root `/` is a language router that auto-redirects by `navigator.language` with a visible fallback picker.
+- `index.html`: Language router at `/` (redirects to `/ja/` or `/en/`; hreflang `x-default`).
+- `ja/index.html`: The Japanese homepage (served at `/ja/`).
+- `en/index.html`: The English homepage (served at `/en/`).
+- `ja/articles.html`: The Japanese article index (served at `/ja/articles.html`).
 - `en/articles.html`: The English article index (served at `/en/articles.html`).
+- `articles.html`: Redirect stub → `/ja/articles.html` (preserves old URL for SEO).
 - `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters.
 - `src/main.js`: Adds interactivity, primarily managing sticky header classes, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
 - `src/components/header.js`: Dynamic component that manages cross-linking between localized versions of pages using `hreflang` tags.
@@ -29,7 +32,7 @@ The project includes a compilation script that parses Markdown insights into ful
   - **Internal Linking**: The compiler maps SEO-friendly slugs to the specific output route paths.
   - **Hreflang**: The compiler injects bidirectional `<link rel="alternate" hreflang="en/ja">` tags into each article.
   - **Language Detection**: Articles under `ja/articles/` use `<html lang="ja">`, English articles use `<html lang="en">`.
-- **Index UI**: Linked cohesively inside `articles.html` (Japanese) and `en/articles.html` (English).
+- **Index UI**: Linked cohesively inside `ja/articles.html` (Japanese) and `en/articles.html` (English).
 
 ### Article Slugs
 | English (under `/en/articles/`) | Japanese (under `/ja/articles/`) |

@@ -31,13 +31,13 @@ export function renderHeader({ fixed = false, full = false } = {}) {
     call: "📞 今すぐ電話",
     articles: "記事",
     langText: "日本語",
-    home: "/",
-    homeLink: "/",
-    articlesLink: "/articles.html"
+    home: "/ja/",
+    homeLink: "/ja/",
+    articlesLink: "/ja/articles.html"
   };
 
   // Detect other language URLs from hreflang or fallback
-  const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/index.html';
+  const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/ja/';
   const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/en/';
 
   const bookHref = `${dict.homeLink}#contact`;
@@ -51,7 +51,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
       <a href="${dict.homeLink}#location">${dict.location}</a>
     </nav>` : `
     <nav class="nav-links">
-      <a href="${dict.homeLink}">${dict.home === '/' ? 'ホーム' : 'Home'}</a>
+      <a href="${dict.homeLink}">${isEn ? 'Home' : 'ホーム'}</a>
       <a href="${dict.articlesLink}">${dict.articles}</a>
     </nav>`;
 
@@ -76,7 +76,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
   const mobileMenu = `
     <div class="mobile-menu" id="mobile-menu">
       <nav class="mobile-menu-links">
-        <a href="${dict.homeLink}">${dict.home === '/' ? 'ホーム' : 'Home'}</a>
+        <a href="${dict.homeLink}">${isEn ? 'Home' : 'ホーム'}</a>
         <a href="${dict.articlesLink}">${dict.articles}</a>
         <a href="${dict.homeLink}#about">${dict.about}</a>
         <a href="${dict.homeLink}#amenities">${dict.facilities}</a>

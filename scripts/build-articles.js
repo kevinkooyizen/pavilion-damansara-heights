@@ -57,7 +57,7 @@ ${hreflangTags}
   <body>
     <div id="header-slot"></div>
     <div class="article-page">
-      <a href="${lang === 'ja' ? '/articles.html' : '/en/articles.html'}" class="back-link">${lang === 'ja' ? '← インサイト一覧に戻る' : '← Back to Insights'}</a>
+      <a href="${lang === 'ja' ? '/ja/articles.html' : '/en/articles.html'}" class="back-link">${lang === 'ja' ? '← インサイト一覧に戻る' : '← Back to Insights'}</a>
 `;
 
 const shellFooterHTML = `
@@ -93,7 +93,7 @@ function processArticle(filePath, lang) {
   let htmlContent = marked(markdownContent);
 
   // Auto-append .html to any internal cross-reference that starts with / and has no extension
-  const articlePrefix = lang === 'en' ? '/en/articles' : '/articles';
+  const articlePrefix = lang === 'en' ? '/en/articles' : '/ja/articles';
   htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, `href="${articlePrefix}$1.html"`);
 
   // Hide SEO metadata from visual rendering but keep in DOM for crawlers
