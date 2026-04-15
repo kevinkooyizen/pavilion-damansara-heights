@@ -1,5 +1,5 @@
 import './style.css'
-import { renderHeader } from './components/header.js'
+import { renderHeader, initHeaderInteractions } from './components/header.js'
 import { renderFooterMinimal } from './components/footer.js'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (footerSlot) {
     footerSlot.outerHTML = renderFooterMinimal();
   }
+
+  initHeaderInteractions();
 });

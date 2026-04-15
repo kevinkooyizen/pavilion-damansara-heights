@@ -40,6 +40,9 @@ export function renderHeader({ fixed = false, full = false } = {}) {
   const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/index.html';
   const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/en/';
 
+  const bookHref = `${dict.homeLink}#contact`;
+  const telHref = 'tel:+60312345678';
+
   const navLinks = full ? `
     <nav class="nav-links">
       <a href="${dict.homeLink}#about">${dict.about}</a>
@@ -61,8 +64,8 @@ export function renderHeader({ fixed = false, full = false } = {}) {
           <a href="${enHref}">English</a>
         </div>
       </div>
-      <button class="btn btn-gold">${dict.book}</button>
-      <button class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)">${dict.call}</button>
+      <a href="${bookHref}" class="btn btn-gold">${dict.book}</a>
+      <a href="${telHref}" class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)">${dict.call}</a>
     </div>`;
 
   const hamburger = `
@@ -88,8 +91,8 @@ export function renderHeader({ fixed = false, full = false } = {}) {
             <a href="${enHref}">English</a>
           </div>
         </div>
-        <button class="btn btn-gold btn-large" style="width: 100%;">${dict.book}</button>
-        <button class="btn btn-outline btn-large" style="width: 100%; border-color: var(--gold); color: var(--gold);">${dict.call}</button>
+        <a href="${bookHref}" class="btn btn-gold btn-large" style="width: 100%;">${dict.book}</a>
+        <a href="${telHref}" class="btn btn-outline btn-large" style="width: 100%; border-color: var(--gold); color: var(--gold);">${dict.call}</a>
       </div>
     </div>`;
 
@@ -107,4 +110,45 @@ export function renderHeader({ fixed = false, full = false } = {}) {
       </div>
       ${mobileMenu}
     </header>`;
+}
+
+/**
+ * Wires up hamburger + language dropdown interactions.
+ * Safe to call on any page that renders the header.
+ */
+export function initHeaderInteractions() {
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+
+    mobileMenu.querySelectorAll('.mobile-menu-links a, .mobile-menu-actions a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  }
+
+  const dropdowns = document.querySelectorAll('.dropdown');
+  const langBtns = document.querySelectorAll('.lang-btn');
+
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const dropdown = btn.closest('.dropdown');
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove('show');
+      });
+      dropdown.classList.toggle('show');
+    });
+  });
+
+  window.addEventListener('click', () => {
+    dropdowns.forEach(d => d.classList.remove('show'));
+  });
 }

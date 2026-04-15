@@ -1,4 +1,4 @@
-# Mont Kiara: The Japanese Expat's Complete Neighbourhood Guide (2025)
+# Mont Kiara: The Japanese Expat's Complete Neighbourhood Guide (2026)
 
 **Meta description:** Mont Kiara is KL's most Japanese-friendly suburb — with Japanese clinics, supermarkets, restaurants, international schools and a strong expat community. Here's everything you need to know.
 
@@ -105,7 +105,7 @@ This is not a recommendation of any specific development. Always conduct your ow
 
 ### Rental Yields
 
-For investors, Mont Kiara delivers gross rental yields of approximately **4.6% to 5.4%** on well-positioned units, driven by consistent expatriate rental demand. The expat rental market in Mont Kiara is deep — new Japanese corporate arrivals almost always start by renting in the area before deciding whether to buy. This creates a reliable tenant base for investor-owners.
+For investors, Mont Kiara delivers gross rental yields of approximately **~4% to 4.5% in 2026**, driven by consistent expatriate rental demand. Yields have softened from the 5%+ range seen in earlier years as new supply has come online and operating costs have risen. Older buildings with high maintenance fees can dip below this band on a net basis — a point worth flagging honestly to any investor doing yield modelling. That said, the expat rental market in Mont Kiara remains deep: new Japanese corporate arrivals almost always start by renting in the area before deciding whether to buy, which creates a reliable tenant base for investor-owners.
 
 ---
 
@@ -132,5 +132,15 @@ For day-to-day public transport, the nearest train station is Segambut KTM Komut
 For a comparison of Mont Kiara against other areas, see: [Best Areas in Klang Valley for Japanese Families](/klang-valley-best-areas-japanese-families). For corporate expats weighing buy vs rent in Mont Kiara specifically, see: [Buy vs Rent in Klang Valley — A Guide for Japanese Work Expats](/klang-valley-buy-vs-rent-japanese-expat).
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>If Mont Kiara feels too dense or school-run congested, consider Damansara Heights — KL's quieter prestige address, just minutes from the same international schools and amenities. Pavilion Imperial Residences offers branded freehold living for Japanese families and investors prioritising long-hold quality.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. Prices, developments, and amenities are subject to change. Always conduct independent due diligence before purchasing.*

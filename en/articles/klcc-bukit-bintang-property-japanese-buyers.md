@@ -1,4 +1,4 @@
-# KLCC & Bukit Bintang: Premium Property Guide for Japanese Buyers (2025)
+# KLCC & Bukit Bintang: Premium Property Guide for Japanese Buyers (2026)
 
 **Meta description:** A guide to buying premium property in KL's Golden Triangle — KLCC, Bukit Bintang, and TRX. Prices, yields, top developments, and what Japanese buyers should know.
 
@@ -92,7 +92,7 @@ Branded residences command a premium of 20%–40% over non-branded equivalents b
 
 ## Price Ranges
 
-| Sub-area | Price per sq ft (2025) | Typical 2-Bed Unit | Typical 3-Bed Unit |
+| Sub-area | Price per sq ft (2026) | Typical 2-Bed Unit | Typical 3-Bed Unit |
 |---|---|---|---|
 | KLCC (prime) | RM1,500 – RM2,500 | RM2.0M – RM3.5M | RM3.0M – RM5.0M+ |
 | KLCC (secondary) | RM1,000 – RM1,500 | RM1.2M – RM2.0M | RM2.0M – RM3.0M |
@@ -111,7 +111,7 @@ The KLCC–Bukit Bintang area delivers gross rental yields of approximately **4%
 - **Business travellers:** Short- and medium-term rentals to business visitors are common
 - **Tourism spillover:** Bukit Bintang's proximity to hotels and retail creates demand from longer-stay visitors
 
-Yields are slightly lower than Mont Kiara's (4.6%–5.4%) primarily because purchase prices are higher, but the capital appreciation potential is generally considered stronger in the Golden Triangle. For Japanese investors comparing KL yields to Tokyo's 2%–3%, the return profile remains attractive.
+Yields are broadly comparable to Mont Kiara's softened ~4.0%–4.5% range (2026) — the Golden Triangle's higher purchase prices are offset by the strength of corporate and short-stay demand. The capital appreciation potential is generally considered stronger in the Golden Triangle than in Mont Kiara. For Japanese investors comparing KL yields to Tokyo's 2%–3%, the return profile remains attractive.
 
 Note: Short-term rental (Airbnb-style) regulations vary by development. Some management corporations restrict short-term lets, while others permit them. Always verify the house rules of a specific development before purchasing with a short-term rental strategy in mind.
 
@@ -127,7 +127,7 @@ The Golden Triangle is the best-connected area in Kuala Lumpur for public transp
 - **MRT Putrajaya Line:** Conlay station (serving the KLCC fringe), TRX station
 - **LRT Kelana Jaya Line:** KLCC station
 - **KL Monorail:** Bukit Bintang station, Raja Chulan station
-- **MRT3 Circle Line** (under construction): Will further enhance connectivity
+- **MRT3 Circle Line** (Final Railway Scheme approved July 2025; land acquisition end-2026; construction from 2027): Will further enhance connectivity over the medium term
 
 For a Japanese buyer accustomed to Tokyo's train network, this area is the closest KL equivalent to a "train-centric" lifestyle. Many residents here do not own a car, relying on MRT and Grab ride-hailing for daily transport.
 
@@ -162,5 +162,15 @@ The area lacks the deeply integrated Japanese community feel of Mont Kiara, but 
 For the Japanese community-focused alternative, see: [Mont Kiara: The Japanese Expat's Neighbourhood Guide](/mont-kiara-japanese-expat-guide). For a buy-vs-rent analysis for work expats considering KL, see: [Buy vs Rent in Klang Valley — A Guide for Japanese Work Expats](/klang-valley-buy-vs-rent-japanese-expat).
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>Drawn to the Golden Triangle's prestige but want a quieter, more exclusive address with the same long-hold quality? Pavilion Imperial Residences in Damansara Heights offers branded freehold living in one of KL's most established prestige neighbourhoods — a complementary alternative for Japanese buyers who value privacy alongside foreign-buyer eligibility and capital preservation.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. Prices, developments, and regulations are subject to change. Always conduct independent due diligence before purchasing.*

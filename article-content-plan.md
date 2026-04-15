@@ -33,6 +33,36 @@ This plan follows a **Pillar + Cluster** model:
 
 ---
 
+## Funnel & CTA Strategy
+
+The site mixes two distinct goals on one domain:
+- **Editorial hub** — the pillar/cluster aimed at organic search visibility for broad Klang Valley topics
+- **Sales funnel** — the homepage is a single-development landing page selling Pavilion Imperial Residences (Damansara Heights)
+
+**Do not blanket-funnel articles to the homepage.** Heavy in-body links from topically unrelated articles to a commercial landing page signal "thin commercial site" to Google rather than "topical authority," and they break user trust. The pillar/cluster model only works if the **pillar**, not the homepage, accumulates internal link equity for "Japanese buyer Klang Valley property."
+
+### Two-tier CTA model
+
+**Tier 1 — Sitewide header equity (already in place).** Every article's header (rendered by `src/components/header.js`) links to the homepage via the logo, "Home" nav item, and "Book Viewing" button. This is sufficient for PageRank flow to the homepage. No in-body link is needed for SEO purposes.
+
+**Tier 2 — End-of-article development CTA card.** Every article ends with one visually distinct CTA card (styled, not inline editorial). ~50–80 words. Mentions Pavilion Imperial Residences + Damansara Heights briefly, with a "Book Viewing" button linking to the homepage. Treated as advertising, not editorial content. Keeps article bodies clean while giving every reader a single predictable conversion path.
+
+### Contextual in-body mentions — allowed only here
+
+The development may be mentioned in body copy **only** in the following articles, where Damansara Heights is contextually on-topic:
+
+- **Pillar** — under "Key Klang Valley areas" the Damansara Heights bullet may naturally mention Pavilion Imperial Residences
+- **C4 (Buy vs Rent)** — under "Recommended areas for work expats" the Damansara Heights item may mention the development
+- **C5 (Best Areas for Japanese Families)** — the Damansara Heights row in the area table may link to the development
+
+**Do not** mention the development in the body of: C1 (Rules), C2 (Mont Kiara), C3 (MM2H), C6 (Investment), C7 (GRR), C8 (Kuala Lumpur), C9 (KLCC & BB), or C10 (Mont Kiara Condos). These articles are about other neighbourhoods or topical areas; an inline pitch would break user intent and dilute topical authority.
+
+### Pillar exception — richer funnel block
+
+The pillar's CTA section is more prominent than the cluster CTA card: a full lead-capture form + development showcase block. Pillar visitors are mid-funnel and on-topic for the development, so a stronger funnel role is appropriate.
+
+---
+
 ## Pillar Article
 
 ### Title
@@ -69,7 +99,7 @@ This plan follows a **Pillar + Cluster** model:
 6. **Investment angles** — Yields, capital growth (brief; link to C6)
 7. **Step-by-step buying process** — SPA, stamp duty, state consent, title registration
 8. **FAQs** — 5–8 common questions (e.g. minimum price, loan eligibility, taxes)
-9. **CTA** — Contact form / enquiry button
+9. **CTA — richer pillar funnel block** — Full lead-capture form + Pavilion Imperial Residences (Damansara Heights) showcase. Pillar visitors are mid-funnel and on-topic, so this is more prominent than the standard end-of-article CTA card used on clusters. See "Funnel & CTA Strategy" above.
 
 ### Internal Links Out
 - → C1 (rules section)
@@ -82,6 +112,7 @@ This plan follows a **Pillar + Cluster** model:
 - → C8 (Kuala Lumpur property section)
 - → C9 (KLCC & Bukit Bintang section)
 - → C10 (Mont Kiara condos section)
+- → Homepage (Pavilion Imperial Residences) — contextually under the Damansara Heights bullet in "Key Klang Valley areas" and via the pillar CTA block
 
 ---
 
@@ -117,8 +148,8 @@ This plan follows a **Pillar + Cluster** model:
 2. **What types of property can foreigners buy?** — strata (condos/apartments) vs landed
 3. **Minimum purchase prices by state** — table: KL (RM1M), Selangor stratified (RM1.5M), Selangor landed (RM2M)
 4. **State authority consent** — what it is and how it works
-5. **Costs breakdown** — stamp duty (8% for foreigners from Budget 2026), legal fees, SPA costs
-6. **Taxes** — RPGT (Real Property Gains Tax), income tax on rental
+5. **Costs breakdown** — stamp duty (flat 8% for foreigners from 1 January 2026, doubled from the previous 4% under Budget 2026), legal fees, SPA costs
+6. **Taxes** — RPGT (Real Property Gains Tax): foreigners pay 30% on chargeable gains for years 1–5 and 10% from year 6 onwards (no taper to 0%); income tax on rental
 7. **Japan–Malaysia double tax treaty** — brief mention, reassuring for Japanese investors
 8. **Can you get a mortgage?** — MM2H holders up to 80% LTV; non-MM2H ~50% LTV
 9. **FAQs** — 4–6 questions
@@ -160,7 +191,7 @@ This plan follows a **Pillar + Cluster** model:
 2. **Japanese amenities in MK** — clinics (Hibari Clinic), grocery stores (Shojikiya, Japan Grocer, Tokuya), restaurants, onsen spa, hair salons
 3. **Schools** — Garden International School, Mont Kiara International School, proximity to Japanese School KL
 4. **Property types** — Mostly high-rise condos, limited landed. Price range (RM1M–RM3M+)
-5. **Rental yields** — 4.6%–5.4% gross (good for investors)
+5. **Rental yields** — ~4%–4.5% gross in 2026 (softened from earlier years; older buildings with high maintenance fees can dip lower — flag this honestly for investors)
 6. **Traffic & connectivity** — Honest note on school-run congestion; highway access
 7. **Top condo developments to consider** — e.g. 10 Mont Kiara, Kiaraville, Sunway Vivaldi (non-promotional tone; link to C10 for full comparison)
 8. **Who Mont Kiara suits best** — families with school-age children, corporate expats, retirees wanting a Japanese community feel
@@ -196,13 +227,17 @@ This plan follows a **Pillar + Cluster** model:
 - **Tone:** Step-by-step, practical, confidence-building.
 
 #### Sections to Cover
-1. **What is MM2H?** — Overview of the restructured 2024 three-tier model
-2. **Three tiers explained** — Table: Silver / Gold / Platinum (fixed deposit, min property, visa duration, stay requirements)
-3. **MM2H + property benefits** — Higher LTV mortgage (up to 80%), ability to purchase landed property (state permitting)
+1. **What is MM2H?** — Overview of the current four-tier Mainland MM2H model (restructured under the 2024 reforms and refined into 2026)
+2. **Four tiers explained** — Table covering Silver / Gold / Platinum / SEZ (fixed deposit, min property purchase, visa duration, age requirement, government participation fee). Use current 2026 figures:
+   - **Silver:** USD 150,000 FD, RM 600,000 min property, 5-year renewable visa, age 25+, RM 40,000 fee
+   - **Gold:** USD 500,000 FD, RM 1,000,000 min property, 15-year renewable visa, age 25+, RM 55,000 fee
+   - **Platinum:** USD 1,000,000 FD, RM 2,000,000 min property, 20-year renewable visa, age 25+, RM 70,000 fee
+   - **SEZ/SFZ:** Special Economic/Financial Zone tier, age 21+, RM 40,000 fee — explain how it differs from the three mainstream tiers
+3. **MM2H + property benefits** — Higher LTV mortgage (up to 80%), ability to purchase landed property (state permitting), 50% FD withdrawal allowed against the principal
 4. **Who qualifies?** — Financial requirements, age considerations, documents
 5. **Application process** — Step-by-step from application to approval
-6. **Which tier suits which type of Japanese buyer?** — Silver for retirees, Gold for investors/families, Platinum for HNW
-7. **Property purchase under MM2H** — Timing, 10-year holding period (Silver tier), state consent
+6. **Which tier suits which type of Japanese buyer?** — Silver for retirees on a budget, Gold for investors/families seeking long horizon, Platinum for HNW, SEZ for younger applicants tied to designated zones
+7. **Property purchase under MM2H** — Timing, holding-period rules under the new tiers, state consent
 8. **Life after MM2H approval** — Banking, healthcare, schooling implications
 
 #### Internal Links
@@ -246,7 +281,7 @@ This plan follows a **Pillar + Cluster** model:
 5. **Can you buy on a work visa?** — Yes, but without MM2H, mortgage LTV is ~50%
 6. **What Japanese work expats typically look for** — Near Japanese community, school, commute to TRX / KL Sentral
 7. **Company-sponsored purchase** — Notes on corporate housing purchase (rare but possible)
-8. **Recommended areas for work expats** — Mont Kiara, Bangsar, KLCC, Damansara Heights
+8. **Recommended areas for work expats** — Mont Kiara, Bangsar, KLCC, Damansara Heights. The Damansara Heights item may include a brief on-topic mention of Pavilion Imperial Residences as an example of a high-end branded development suited to corporate expats (per "Funnel & CTA Strategy").
 
 #### Internal Links
 - ↑ Pillar
@@ -292,6 +327,8 @@ This plan follows a **Pillar + Cluster** model:
 | Mont Kiara | Families, large JP community | RM1M–3M | Very large | GIS, MK International |
 | Bangsar | Urban families, couples | RM1.2M–2.5M | Medium | Alice Smith, Epsom |
 | Damansara Heights | Upscale families | RM1.5M–4M+ | Medium | Fairview, GIS |
+
+> The Damansara Heights row may link to Pavilion Imperial Residences as an on-topic example (per "Funnel & CTA Strategy"). No other row links to a specific development.
 | Petaling Jaya | Suburban families | RM800K–1.5M | Small | Sri KDU, Nexus |
 | Subang Jaya | Budget-conscious families | RM700K–1.3M | Small | Taylor's, Sunway |
 | KLCC | Urban professionals | RM1M–5M+ | Small | Various nearby |
@@ -341,13 +378,13 @@ This plan follows a **Pillar + Cluster** model:
 1. **Why Malaysian property appeals to Japanese investors** — Price-to-income ratio vs Tokyo (~1/4 of Tokyo prices), rental yield (4%–7% vs Tokyo's 2%–3%), no purchase tax for foreigners beyond stamp duty
 2. **Price comparison table** — KL vs Tokyo vs Bangkok vs Manila per sqm
 3. **Best areas for rental yield**
-   - Mont Kiara: 4.6%–5.4% (expat demand)
+   - Mont Kiara: ~4%–4.5% gross in 2026 (expat demand; older buildings with high maintenance fees can drag net yields lower)
    - Bandar Sunway: 6%–7% (student demand)
    - KLCC/Bukit Bintang: 4%–5% (business travellers, professionals; link to C9 for area deep dive)
-4. **Capital appreciation trends** — Properties near MRT/LRT stations up 15%–25% over 5 years; upcoming MRT3 Circle Line impact
-5. **Hot emerging zones** — TRX, Titiwangsa (MRT3 station planned), Cheras
-6. **Risks to acknowledge** — Oversupply in some corridors, vacancy risk in suburban areas, 10-year holding period under MM2H Silver
-7. **Exit strategy — RPGT explained** — Tax rates by holding period for foreigners
+4. **Capital appreciation trends** — Properties near MRT/LRT stations up 15%–25% over 5 years; MRT3 Circle Line catalyst (Final Railway Scheme approved July 2025; land acquisition targeted for end-2026; construction expected to start in 2027 — investors should treat upside as medium-term, not imminent)
+5. **Hot emerging zones** — TRX, Titiwangsa (future MRT3 station), Cheras
+6. **Risks to acknowledge** — Oversupply in some corridors, vacancy risk in suburban areas, holding-period rules under the latest MM2H tier structure, foreigner stamp duty doubling to 8% from 1 January 2026 (entry costs are now ~9–10% all-in)
+7. **Exit strategy — RPGT explained** — For foreigners: 30% on chargeable gains for years 1–5, 10% from year 6 onwards (no taper to 0%, unlike citizens/PRs)
 8. **Financing** — Mortgage options, 50% LTV without MM2H, 80% with MM2H
 9. **Property management** — Options for absentee owners based in Japan
 
@@ -562,7 +599,8 @@ C10 (MK Condos) ──→ C8 (broader KL context)
 - [ ] Target keywords in: title tag, H1, first 100 words, at least 2 subheadings, meta description
 - [ ] Schema markup: Article + FAQ schema added
 - [ ] Internal links verified and live
-- [ ] CTA added (contact form, property listing link, or WhatsApp enquiry)
+- [ ] End-of-article development CTA card added (per "Funnel & CTA Strategy")
+- [ ] In-body Pavilion Imperial Residences mention only if article is Pillar, C4, or C5 — not in any other cluster
 - [ ] Images: at least 1 localised image (e.g. Mont Kiara skyline, Japanese grocer in MK)
 - [ ] Meta description written (EN + JP, under 160 characters)
 - [ ] Publication date set (refresh annually — include year in title)

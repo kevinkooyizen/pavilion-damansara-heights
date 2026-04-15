@@ -1,6 +1,6 @@
-# Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs (2025)
+# Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs (2026)
 
-**Meta description:** Yes — Japanese nationals can legally buy property in Malaysia. Here is everything you need to know about the rules, minimum prices, costs, taxes, and mortgage options in 2025.
+**Meta description:** Yes — Japanese nationals can legally buy property in Malaysia. Here is everything you need to know about the rules, minimum prices, costs, taxes, and mortgage options in 2026.
 
 **Target keywords:** can Japanese buy property Malaysia | Malaysia property rules foreigner minimum price | Malaysia property stamp duty foreigner | foreign property ownership Malaysia Selangor
 
@@ -47,7 +47,7 @@ Each Malaysian state independently sets the minimum value at which foreigners ma
 **Important notes:**
 - These thresholds are minimums — there is no upper limit.
 - Developers of certain approved projects may secure state exemptions that lower the threshold for their specific development. Always verify on a project-by-project basis.
-- Thresholds are periodically revised by state governments. The figures above reflect the 2025–2026 position. Always confirm current thresholds with your lawyer.
+- Thresholds are periodically revised by state governments. The figures above reflect the 2026 position. Always confirm current thresholds with your lawyer.
 
 For Japanese buyers focused on the Klang Valley, the practical implication is that your budget needs to be at least RM1 million for a KL property and at least RM1.5 million for a strata unit in Selangor (Petaling Jaya, Subang Jaya, etc.).
 
@@ -77,11 +77,11 @@ Understanding all costs upfront is essential for Japanese buyers who may be conv
 
 ### Stamp Duty
 
-From Malaysia's Budget 2026, foreigners purchasing residential property in Malaysia are subject to a stamp duty rate of **8% of the purchase price**. This is a significant cost and the largest single transaction expense.
+Under Malaysia's Budget 2026, foreigners purchasing residential property are subject to a flat stamp duty rate of **8% of the purchase price**, effective from **1 January 2026**. This is double the previous 4% rate and is now the largest single transaction expense.
 
 On a RM1.5 million purchase: RM1,500,000 × 8% = **RM120,000** in stamp duty.
 
-Note that Malaysian citizens and permanent residents pay progressively lower rates (from 1% to 4%), so the foreigner rate is notably higher.
+Note that Malaysian citizens and permanent residents continue to pay progressively lower rates (from 1% to 4%), so the foreigner rate is significantly higher and should be modelled into your all-in entry cost (now ~9–10% of purchase price).
 
 ### Legal Fees (SPA)
 
@@ -122,16 +122,14 @@ In Malaysia, the convention is that the seller pays the agent's commission (typi
 
 ### Real Property Gains Tax (RPGT)
 
-When you sell a property in Malaysia, any gain is subject to RPGT. The rates for foreigners are:
+When you sell a property in Malaysia, any gain is subject to RPGT. Crucially, foreigners do **not** benefit from the tapered rates that apply to Malaysian citizens and PRs. The rates for foreigners are:
 
 | Holding Period | RPGT Rate (Foreigner) |
 |---|---|
-| Up to 3 years | 30% |
-| 4 years | 20% |
-| 5 years | 15% |
-| More than 5 years | 10% |
+| Years 1–5 | 30% |
+| Year 6 onwards | 10% |
 
-For long-term buyers and investors, the key takeaway is: holding for more than 5 years brings the RPGT rate down to 10% of the gain (not the sale price). This is manageable, but you need to factor it into your exit calculations. For a full discussion of investment exit strategy, see: [Malaysia Property Investment Guide for Japanese Buyers](/malaysia-property-investment-japanese-buyers).
+There is no further taper to 0% for foreigners — even after a decade of ownership, you will pay 10% on chargeable gains. For long-term buyers, the key takeaway is to hold for at least 5 full years before disposing, after which the rate drops from 30% to 10%. Factor this into your exit calculations. For a full discussion of investment exit strategy, see: [Malaysia Property Investment Guide for Japanese Buyers](/malaysia-property-investment-japanese-buyers).
 
 ### Rental Income Tax
 
@@ -193,5 +191,15 @@ Yes. There are no restrictions on selling to another foreigner, subject to the s
 You cannot legally purchase it as a foreigner at that price. There are no workarounds. Some buyers attempt to use a local nominee — this is legally problematic and not recommended.
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>A branded freehold residence in one of Kuala Lumpur's most established prestige addresses. Strata-titled, foreign-buyer eligible, and well-positioned for Japanese families and investors looking for long-hold quality in the Klang Valley.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. Minimum purchase prices, stamp duty rates, and approval processes are subject to change. Always verify current requirements with a licensed Malaysian conveyancing lawyer.*

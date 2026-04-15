@@ -1,5 +1,5 @@
 import './style.css'
-import { renderHeader } from './components/header.js'
+import { renderHeader, initHeaderInteractions } from './components/header.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Inject shared components
@@ -8,24 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     headerSlot.outerHTML = renderHeader({ fixed: false, full: true });
   }
 
-  // Mobile menu
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('open');
-    });
-
-    // Close menu when a nav link is tapped
-    mobileMenu.querySelectorAll('.mobile-menu-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('open');
-      });
-    });
-  }
+  initHeaderInteractions();
 
   // Sticky header
   const header = document.getElementById('header');
@@ -58,25 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.scroll-reveal').forEach((el) => {
     observer.observe(el);
-  });
-
-  // Language Dropdowns (desktop + mobile)
-  const dropdowns = document.querySelectorAll('.dropdown');
-  const langBtns = document.querySelectorAll('.lang-btn');
-
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const dropdown = btn.closest('.dropdown');
-      dropdowns.forEach(d => {
-        if (d !== dropdown) d.classList.remove('show');
-      });
-      dropdown.classList.toggle('show');
-    });
-  });
-
-  window.addEventListener('click', () => {
-    dropdowns.forEach(d => d.classList.remove('show'));
   });
 
 });

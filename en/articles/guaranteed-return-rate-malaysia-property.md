@@ -1,4 +1,4 @@
-# The Truth About Guaranteed Return Rates (GRR) in Malaysia Property (2025)
+# The Truth About Guaranteed Return Rates (GRR) in Malaysia Property (2026)
 
 **Meta description:** Is Guaranteed Rental Return (GRR) safe in Malaysia? A complete guide for Japanese investors on the risks, rewards, and reality of GRR property schemes.
 
@@ -85,3 +85,15 @@ Rather than a developer lock-in, purchase a fairly priced property and hire an i
 Guaranteed Return Rates are ultimately a marketing tool, not a financial safety net. While they offer a hands-off, passive income stream for the first few years, they often mask inflated property prices and set the investor up for significant challenges when the guarantee period expires.
 
 For conservative, long-term capital preservation and steady income, purchasing standard residential properties in high-demand expat zones remains the safest strategy for Japanese investors in Malaysia.
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>If you are evaluating GRR offers and want a benchmark for what fundamentally strong, foreign-eligible KL real estate looks like, Pavilion Imperial Residences in Damansara Heights offers branded freehold quality in one of KL's most established prestige addresses — no guarantees attached, just genuine long-hold value.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
+
+*Last updated: April 2026.*

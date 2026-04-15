@@ -1,8 +1,8 @@
-# Top Mont Kiara Condos for Japanese Buyers: A Development Comparison Guide (2025)
+# Top Mont Kiara Condos for Japanese Buyers: A Development Comparison Guide (2026)
 
 **Meta description:** A data-driven comparison of Mont Kiara's top condominiums for Japanese buyers — prices per sq ft, facilities, rental demand, and which development suits families, investors, and professionals.
 
-**Target keywords:** Mont Kiara best condo buy 2025 | Mont Kiara property comparison Japanese | Mont Kiara condo price per sqft | best condo Mont Kiara expat family
+**Target keywords:** Mont Kiara best condo buy 2026 | Mont Kiara property comparison Japanese | Mont Kiara condo price per sqft | best condo Mont Kiara expat family
 
 ---
 
@@ -20,7 +20,7 @@ For a full lifestyle guide to the Mont Kiara neighbourhood, see: [Mont Kiara: Th
 
 Every condominium in this guide is evaluated on the same criteria:
 
-- **Price per sq ft** — Based on recent transaction data (2024–2025)
+- **Price per sq ft** — Based on recent transaction data (2024–2026)
 - **Built year** — Older buildings may have lower prices but higher maintenance needs
 - **Unit sizes** — Range of available configurations (1-bed to 4-bed+)
 - **Facilities** — Pool, gym, tennis, playground, concierge, security quality
@@ -32,7 +32,7 @@ Every condominium in this guide is evaluated on the same criteria:
 
 ## Development Comparison Table
 
-| Development | Built | Price/sqft (2025) | Unit Sizes | Maintenance | JP Demand | Best For |
+| Development | Built | Price/sqft (2026) | Unit Sizes | Maintenance | JP Demand | Best For |
 |---|---|---|---|---|---|---|
 | 10 Mont Kiara | 2009 | RM750–950 | 2,100–4,600 sqft | RM0.30/sqft | Very High | Families |
 | Seni Mont Kiara | 2012 | RM700–900 | 2,400–4,400 sqft | RM0.35/sqft | High | Families |
@@ -146,7 +146,7 @@ Vacancy periods for well-maintained units in the top developments are typically 
 
 **Holding value:** Developments with strong management, good maintenance standards, and high occupancy rates hold value best. Buildings that have been poorly maintained or carry high vacancy tend to show price stagnation or decline.
 
-**Foreign buyer exit:** RPGT applies — 30% on gains within 5 years of purchase, 10% thereafter. Factor this into your investment horizon when planning entry and exit timing. For a full investment analysis, see: [Malaysia Property Investment Guide for Japanese Buyers](/malaysia-property-investment-japanese-buyers).
+**Foreign buyer exit:** RPGT applies — 30% on gains within 5 years of purchase, 10% from year 6 onwards. Foreigners do **not** benefit from any further taper to 0%, so the 5→6 year boundary is the single most important threshold. Factor this into your investment horizon when planning entry and exit timing. For a full investment analysis, see: [Malaysia Property Investment Guide for Japanese Buyers](/malaysia-property-investment-japanese-buyers).
 
 ---
 
@@ -160,7 +160,7 @@ Large units, family-oriented facilities, strong Japanese community presence, pro
 ### For investors targeting Japanese corporate tenants
 
 **Top pick: 10 Mont Kiara or Kiaraville.**
-10 Mont Kiara for the highest tenant demand and fastest let-up times. Kiaraville for a lower entry price with solid, if slightly lower, demand. Both offer reliable yields in the 4.6%–5.4% range.
+10 Mont Kiara for the highest tenant demand and fastest let-up times. Kiaraville for a lower entry price with solid, if slightly lower, demand. Both offer yields in the ~4.0%–4.5% range (2026, softened from earlier years as new supply has come online and operating costs have risen — older buildings with high maintenance fees can dip lower on a net basis).
 
 ### For young professionals or couples
 
@@ -191,5 +191,15 @@ When visiting Mont Kiara condominiums in person, pay attention to:
 For the full context on Mont Kiara as a neighbourhood, see: [Mont Kiara: The Japanese Expat's Neighbourhood Guide](/mont-kiara-japanese-expat-guide). For broader Kuala Lumpur property context, see: [Buying Property in Kuala Lumpur](/kuala-lumpur-property-guide-japanese-buyers).
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>If your Mont Kiara research has you weighing space, prestige, and long-hold value, Pavilion Imperial Residences in Damansara Heights is worth a side-by-side look — branded freehold living in one of KL's most established prestige addresses, with the privacy and exclusivity that some Japanese buyers find harder to source in Mont Kiara's denser core.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. Prices, developments, and market conditions are subject to change. Always conduct independent due diligence before purchasing. This guide does not constitute a recommendation to purchase any specific property.*

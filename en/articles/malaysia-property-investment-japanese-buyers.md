@@ -1,4 +1,4 @@
-# Malaysia Property Investment Guide for Japanese Buyers: Yields, Growth & Exit (2025)
+# Malaysia Property Investment Guide for Japanese Buyers: Yields, Growth & Exit (2026)
 
 **Meta description:** A data-driven investment guide for Japanese buyers looking at Malaysia property. Covers rental yields, capital growth, best areas, RPGT exit tax, and how MM2H improves your financing.
 
@@ -46,7 +46,7 @@ The KL yield advantage is driven by the expat rental market. There is a constant
 
 ### No Purchase Tax Beyond Stamp Duty
 
-Unlike some markets that impose specific foreign buyer taxes (Singapore's Additional Buyer's Stamp Duty for foreigners is 60%), Malaysia's foreign buyer cost is limited to the 8% stamp duty introduced in 2026. There is no annual wealth tax, no special foreign ownership fee, and no restrictions on rental income.
+Unlike some markets that impose specific foreign buyer taxes (Singapore's Additional Buyer's Stamp Duty for foreigners is 60%), Malaysia's foreign buyer cost is limited to the flat 8% stamp duty effective from 1 January 2026 — doubled from the previous 4% under Budget 2026. All-in entry costs now sit around 9–10% of purchase price. There is no annual wealth tax, no special foreign ownership fee, and no restrictions on rental income.
 
 ---
 
@@ -58,9 +58,9 @@ The highest yields in the Klang Valley are found in Bandar Sunway, driven by a l
 
 For foreign buyers, note that Bandar Sunway is in Selangor, where the minimum purchase price is RM1.5 million for strata units.
 
-### Mont Kiara: 4.6% – 5.4% Gross
+### Mont Kiara: ~4.0% – 4.5% Gross (2026)
 
-Mont Kiara's yields are driven by the consistent demand from newly arriving Japanese and other expat corporate tenants. New corporate assignees to KL typically rent in Mont Kiara for 1 to 2 years before deciding whether to buy. This creates a reliable, repeating tenant pipeline. Void periods tend to be short (1 to 4 weeks in normal market conditions).
+Mont Kiara's yields are driven by the consistent demand from newly arriving Japanese and other expat corporate tenants. New corporate assignees to KL typically rent in Mont Kiara for 1 to 2 years before deciding whether to buy. This creates a reliable, repeating tenant pipeline. Void periods tend to be short (1 to 4 weeks in normal market conditions). Headline yields have softened from the 5%+ range seen in earlier years as new supply has come online and operating costs have risen — and older buildings with high maintenance fees can dip lower on a net basis. Investors should model conservatively.
 
 ### KLCC & Bukit Bintang: 4.0% – 5.0% Gross
 
@@ -80,7 +80,7 @@ Properties within 1.5 km of an MRT or LRT station in the Klang Valley have outpe
 
 ### The MRT3 Circle Line Opportunity
 
-The MRT3 Circle Line is under planning and early development, with construction expected from 2027 onward. The planned route circles the inner-city residential areas, with key stations at Titiwangsa, Sentul, Chan Sow Lin, and others. Properties near planned MRT3 stations — particularly in Titiwangsa, Cheras, and areas currently underserved by rail — are attracting early investor attention.
+The MRT3 Circle Line had its **Final Railway Scheme approved in July 2025**, with **land acquisition targeted for end-2026** and **construction expected to begin in 2027**. The planned route circles the inner-city residential areas, with key stations at Titiwangsa, Sentul, Chan Sow Lin, and others. Properties near planned MRT3 stations — particularly in Titiwangsa, Cheras, and areas currently underserved by rail — are attracting early investor attention. **Investors should treat the upside as medium-term, not imminent**: meaningful price impact typically arrives once stations are physically under construction or close to opening, not on planning approval alone.
 
 ### Emerging Zones
 
@@ -111,9 +111,13 @@ Ringgit has been relatively stable against the yen over the long term, but curre
 
 Malaysian property is not a liquid asset. Selling takes 3 to 6 months minimum, and finding an expat or high-end buyer for premium units can take longer in slower markets. This is not a short-term trading asset.
 
-### Silver Tier MM2H 10-Year Holding Requirement
+### MM2H Tier Holding Rules
 
-If you acquire property through the MM2H Silver tier, the property counts as a restricted holding for 10 years. You can own additional properties, but the MM2H-linked property cannot be sold within the decade.
+Holding-period restrictions vary across the current MM2H tier structure (Silver / Gold / Platinum / SEZ) and have been refined under the latest reforms. If you are acquiring a property as part of an MM2H application, confirm the current holding rules for your specific tier with your MM2H agent before signing — these restrictions affect your exit flexibility and need to be modelled into your hold-period assumptions.
+
+### Higher Stamp Duty (Foreigners)
+
+From 1 January 2026, foreign buyers pay a flat 8% stamp duty (doubled from 4% under Budget 2026). All-in entry costs are now ~9–10% of purchase price, which lengthens the break-even hold period and erodes short-hold IRRs. This is a meaningful change versus pre-2026 modelling and should be reflected in any new investment case.
 
 ---
 
@@ -123,12 +127,14 @@ When you sell, the Real Property Gains Tax (RPGT) applies to your net gain.
 
 ### RPGT Rates for Foreigners
 
-| Holding Period | RPGT Rate |
+Foreigners do **not** benefit from the tapered scale that applies to Malaysian citizens and PRs. The rates are:
+
+| Holding Period | RPGT Rate (Foreigner) |
 |---|---|
-| Disposal within 3 years | 30% of net gain |
-| Year 4 | 20% of net gain |
-| Year 5 | 15% of net gain |
-| After Year 5 | 10% of net gain |
+| Years 1–5 | 30% of net gain |
+| Year 6 onwards | 10% of net gain |
+
+There is **no further taper to 0%** for foreigners — even after a decade of ownership, you will pay 10% on chargeable gains. The single biggest threshold to cross is the year 5 → year 6 boundary, after which the rate drops from 30% to 10%.
 
 **Key clarification:** RPGT is calculated on the net gain (sale price minus purchase price minus allowable expenses), not on the full sale price.
 
@@ -150,7 +156,7 @@ For a Japanese investor buying without MM2H, Malaysian banks will lend up to app
 
 ### With MM2H: Up to 80% LTV
 
-MM2H holders can borrow up to approximately 80% with certain banks. On the same RM2 million property: you borrow RM1.6 million and fund RM400,000 + costs — approximately RM590,000 upfront. The MM2H fixed deposit (RM500,000 for Silver) is held in a designated account, not available for the purchase itself — but it does free up your other capital.
+MM2H holders can borrow up to approximately 80% with certain banks. On the same RM2 million property: you borrow RM1.6 million and fund RM400,000 + costs — approximately RM590,000 upfront. The MM2H fixed deposit (USD 150,000 for Silver, USD 500,000 for Gold, USD 1,000,000 for Platinum) is held in a designated account, but holders may withdraw up to 50% after the first year against approved purposes including the property purchase itself.
 
 For investors who are managing a portfolio and want to preserve capital for other deployments, the MM2H LTV improvement often justifies the programme cost.
 
@@ -185,5 +191,15 @@ Management fees typically run 8% to 12% of monthly rental income. Factor this in
 **Net sale proceeds:** RM2,185,000 vs RM950,000 initial capital = approximately 2.3× return on equity over 7 years
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>For long-hold Japanese investors prioritising capital preservation in an established prestige address, Pavilion Imperial Residences in Damansara Heights offers branded freehold quality, foreign-buyer eligibility, and the kind of address profile that holds value through cycles.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. All figures are illustrative and based on market conditions as of early 2026. Investment outcomes are not guaranteed. Consult a licensed financial advisor before committing to an investment.*

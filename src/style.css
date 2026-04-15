@@ -637,3 +637,173 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
+
+/* ── End-of-article development CTA card (Tier 2 funnel) ── */
+.article-cta-card {
+  margin: 4rem 0 2rem;
+  padding: 2.5rem 2.25rem;
+  background: linear-gradient(135deg, #faf8f3 0%, #f5efe2 100%);
+  border: 1px solid #e8dcc0;
+  border-left: 4px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(31, 34, 41, 0.06);
+}
+.article-cta-card .cta-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.75rem;
+}
+.article-cta-card h3 {
+  font-family: var(--font-serif);
+  color: var(--charcoal);
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+.article-cta-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+.article-cta-card .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.article-cta-card .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  height: 48px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--gold);
+}
+.article-cta-card .cta-btn-primary {
+  background: var(--gold);
+  color: var(--white);
+}
+.article-cta-card .cta-btn-primary:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(197, 160, 89, 0.35);
+  text-decoration: none;
+}
+.article-cta-card .cta-btn-secondary {
+  background: transparent;
+  color: var(--gold);
+}
+.article-cta-card .cta-btn-secondary:hover {
+  background: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Pillar funnel block — richer than the standard cluster CTA card */
+.article-cta-pillar {
+  margin: 4rem 0 2rem;
+  padding: 3rem 2.5rem;
+  background: var(--charcoal);
+  color: var(--text-light);
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(31, 34, 41, 0.12);
+}
+.article-cta-pillar .cta-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.75rem;
+}
+.article-cta-pillar h3 {
+  font-family: var(--font-serif);
+  color: var(--white);
+  font-size: 1.85rem;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+.article-cta-pillar p {
+  color: #d9d6d0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0 0 1.75rem;
+}
+.article-cta-pillar ul {
+  color: #d9d6d0;
+  margin: 0 0 1.75rem;
+  padding-left: 1.25rem;
+}
+.article-cta-pillar ul li {
+  margin-bottom: 0.4rem;
+}
+.article-cta-pillar .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.article-cta-pillar .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  height: 52px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--gold);
+}
+.article-cta-pillar .cta-btn-primary {
+  background: var(--gold);
+  color: var(--white);
+}
+.article-cta-pillar .cta-btn-primary:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+}
+.article-cta-pillar .cta-btn-secondary {
+  background: transparent;
+  color: var(--gold);
+}
+.article-cta-pillar .cta-btn-secondary:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .article-cta-card,
+  .article-cta-pillar {
+    padding: 2rem 1.5rem;
+  }
+  .article-cta-card h3 {
+    font-size: 1.3rem;
+  }
+  .article-cta-pillar h3 {
+    font-size: 1.5rem;
+  }
+  .article-cta-card .cta-btn,
+  .article-cta-pillar .cta-btn {
+    width: 100%;
+  }
+}

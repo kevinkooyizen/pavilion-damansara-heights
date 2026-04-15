@@ -1,8 +1,8 @@
-# Buying Property in Kuala Lumpur: A Complete Guide for Japanese Buyers (2025)
+# Buying Property in Kuala Lumpur: A Complete Guide for Japanese Buyers (2026)
 
 **Meta description:** Everything Japanese buyers need to know about purchasing property in Kuala Lumpur — from foreign ownership rules and minimum prices to the best neighbourhoods and the buying process.
 
-**Target keywords:** Kuala Lumpur property guide Japanese | buy property Kuala Lumpur foreigner 2025 | Kuala Lumpur condo for sale foreigner | KL real estate guide Japanese buyer
+**Target keywords:** Kuala Lumpur property guide Japanese | buy property Kuala Lumpur foreigner 2026 | Kuala Lumpur condo for sale foreigner | KL real estate guide Japanese buyer
 
 ---
 
@@ -63,8 +63,8 @@ Japanese nationals can legally purchase property in Kuala Lumpur, subject to the
 
 1. **Minimum purchase price: RM1,000,000.** This applies to all property types in the Federal Territory.
 2. **No state consent for strata titles.** Condominiums and apartments with strata titles do not require state-level approval in KL, which simplifies and speeds up the process compared to Selangor.
-3. **Stamp duty.** Foreign buyers currently pay a stamp duty rate of up to 8% (as announced in Budget 2026). Legal fees and SPA costs are additional.
-4. **RPGT (Real Property Gains Tax).** Foreigners pay 30% RPGT on gains from property disposed within 5 years, and 10% thereafter.
+3. **Stamp duty.** Foreign buyers pay a flat 8% stamp duty on the SPA value, effective 1 January 2026 — doubled from the previous 4% under Budget 2026. Legal fees and SPA costs are additional, putting all-in entry costs at approximately 9–10% of purchase price.
+4. **RPGT (Real Property Gains Tax).** Foreigners pay 30% RPGT on gains from property disposed within 5 years, and 10% thereafter — with **no further taper to 0%**, even after a decade of ownership.
 
 For a comprehensive breakdown of all costs, taxes, and rules, see: [Can Japanese Buy Property in Malaysia? Rules, Restrictions & Costs](/japanese-buy-property-malaysia-rules).
 
@@ -78,7 +78,7 @@ The centre of the Japanese community in KL. Mont Kiara offers the highest densit
 
 **Best for:** Families, corporate expats, retirees wanting Japanese community
 **Price range:** RM1M–RM3M+
-**Rental yield:** 4.6%–5.4%
+**Rental yield:** ~4.0%–4.5% (2026, softened from earlier years as new supply has come online)
 
 For a full neighbourhood guide, see: [Mont Kiara: The Japanese Expat's Neighbourhood Guide](/mont-kiara-japanese-expat-guide). For a development-by-development comparison, see: [Top Mont Kiara Condos for Japanese Buyers](/mont-kiara-best-condos-japanese-buyers).
 
@@ -101,7 +101,7 @@ A mature, upscale neighbourhood south of KL city centre. Known for its cafe cult
 
 ### Damansara Heights
 
-An exclusive, low-density residential area. Large bungalows and high-end condominiums sit alongside embassies and upscale dining. Less commercial than Mont Kiara — quieter and more private.
+An exclusive, low-density residential area. Large bungalows and high-end condominiums sit alongside embassies and upscale dining. Less commercial than Mont Kiara — quieter and more private. A small number of branded freehold residences sit in this address — for example, **[Pavilion Imperial Residences](/)** — and fit the profile of Japanese buyers seeking long-hold quality in an established prestige neighbourhood.
 
 **Best for:** High-net-worth families seeking privacy
 **Price range:** RM1.5M–RM4M+
@@ -133,7 +133,7 @@ KL's property market is dominated by high-rise developments. The most common typ
 
 ## Price Benchmarks by Neighbourhood
 
-| Neighbourhood | Avg. Price per sq ft (2025) | Typical 3-Bed Unit Price |
+| Neighbourhood | Avg. Price per sq ft (2026) | Typical 3-Bed Unit Price |
 |---|---|---|
 | KLCC | RM1,200 – RM2,500 | RM2.0M – RM4.5M |
 | Bukit Bintang | RM1,000 – RM2,000 | RM1.5M – RM3.5M |
@@ -154,7 +154,7 @@ Several major projects are reshaping KL's property landscape and creating new in
 
 **Merdeka 118** — The world's second-tallest building, located near Chinatown. The surrounding precinct is undergoing regeneration, with new residential and commercial developments planned.
 
-**MRT3 Circle Line** — Currently under construction, this line will connect KL's existing radial MRT lines into a loop, significantly improving connectivity for areas like Titiwangsa, Sentul, and Bangsar South. Properties near planned MRT3 stations have historically seen 15%–25% capital appreciation over 5 years.
+**MRT3 Circle Line** — The Final Railway Scheme was approved in July 2025, with land acquisition targeted for end-2026 and construction expected to begin in 2027. The line will connect KL's existing radial MRT lines into a loop, significantly improving connectivity for areas like Titiwangsa, Sentul, and Bangsar South. Properties near transit stations have historically seen 15%–25% capital appreciation over 5 years — though investors should treat MRT3 upside as medium-term, not imminent.
 
 **Bandar Malaysia** — A massive mixed-use development on the former Sungai Besi airport site, positioned as a future city centre extension with direct rail links to Singapore via the planned HSR alignment.
 
@@ -226,5 +226,15 @@ It depends on your priorities. Mont Kiara for Japanese community and family life
 Central KL property is approximately one-quarter to one-fifth the price of equivalent central Tokyo property on a per-square-metre basis, while offering significantly larger unit sizes and resort-style facilities. For a full investment comparison, see: [Malaysia Property Investment Guide for Japanese Buyers](/malaysia-property-investment-japanese-buyers).
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>For Japanese buyers researching KL neighbourhoods and drawn to Damansara Heights as a quieter, more exclusive alternative to Mont Kiara, Pavilion Imperial Residences offers branded freehold living in one of KL's most established prestige addresses — foreign-buyer eligible, walkable to amenities, and built for long-hold value.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026. Prices, regulations, and developments are subject to change. Always conduct independent due diligence before purchasing.*

@@ -1,4 +1,4 @@
-# Best Areas in Klang Valley for Japanese Families Moving from Japan (2025)
+# Best Areas in Klang Valley for Japanese Families Moving from Japan (2026)
 
 **Meta description:** Moving to KL with family from Japan? Here is a practical comparison of the best Klang Valley areas for Japanese families — covering schools, safety, property prices, and Japanese community access.
 
@@ -57,7 +57,7 @@ Property prices: RM1.2 million to RM2.5 million for condominiums.
 
 Damansara Heights is one of KL's most prestigious residential addresses — mature, leafy, and bordering the forested Bukit Kiara reserve. The Japanese community is smaller than Mont Kiara, but the area has its own expat-friendly infrastructure and is close enough to Mont Kiara for residents to access its Japanese amenities easily.
 
-Fairview International School and access to Garden International School make this viable for families with school-age children. Landed property options exist (at a significant price premium) for families wanting more space.
+Fairview International School and access to Garden International School make this viable for families with school-age children. Landed property options exist (at a significant price premium) for families wanting more space. A small number of branded freehold residences here — for example, **[Pavilion Imperial Residences](/)** — fit the profile of Japanese families seeking long-hold quality in an established prestige address.
 
 Property prices: RM1.5 million to RM5 million+ depending on property type.
 
@@ -96,7 +96,7 @@ Property prices: RM1 million to RM5 million+.
 |---|---|---|---|---|
 | Mont Kiara | Families, large JP community | RM1M – RM3.5M+ | Very large | GIS, MKIS (on-site) |
 | Bangsar / Bangsar South | Professionals, couples | RM1.2M – RM2.5M | Medium | Alice Smith, Epsom |
-| Damansara Heights | Upscale families | RM1.5M – RM5M+ | Medium | Fairview, GIS (nearby) |
+| [Damansara Heights](/) | Upscale families | RM1.5M – RM5M+ | Medium | Fairview, GIS (nearby) |
 | Petaling Jaya | Suburban families | RM1.5M+ (Selangor minimum) | Small | Sri KDU, Nexus |
 | Subang Jaya | Budget families | RM1.5M+ (Selangor minimum) | Very small | Taylor's, Sunway |
 | KLCC / City Centre | Urban professionals | RM1M – RM5M+ | Small | Various nearby |
@@ -135,5 +135,15 @@ Private hospitals accessible from the main expat areas:
 **Japanese supermarkets** — Primarily concentrated in Mont Kiara (Shojikiya, Japan Grocer), but delivery services extend coverage across the Klang Valley.
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>For Japanese families drawn to Damansara Heights as a quieter, more exclusive alternative to Mont Kiara, Pavilion Imperial Residences offers branded freehold living in one of KL's most established prestige addresses — close to international schools, amenities, and the wider Klang Valley.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Family Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026.*

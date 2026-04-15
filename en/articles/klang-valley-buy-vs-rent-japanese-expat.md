@@ -1,4 +1,4 @@
-# Buy vs Rent in Klang Valley: A Guide for Japanese Work Expats (2025)
+# Buy vs Rent in Klang Valley: A Guide for Japanese Work Expats (2026)
 
 **Meta description:** Should Japanese corporate expats in KL buy or rent? This guide compares costs, break-even timing, mortgage rules, and the best areas for work expats to make the right call.
 
@@ -16,7 +16,7 @@ For the legal rules around foreign property ownership, see: [Can Japanese Buy Pr
 
 ## The Central Question: How Long Are You Staying?
 
-Assignment length is the single most important factor in the buy vs rent decision. This is because buying property in Malaysia incurs significant upfront transaction costs — primarily the 8% stamp duty — which take time to recover through capital appreciation or rental income.
+Assignment length is the single most important factor in the buy vs rent decision. This is because buying property in Malaysia incurs significant upfront transaction costs — primarily the 8% stamp duty for foreigners (doubled from 4% effective 1 January 2026 under Budget 2026) — which take time to recover through capital appreciation or rental income.
 
 As a rule of thumb:
 - **Less than 2 years:** Rent. Transaction costs cannot be recovered in this timeframe.
@@ -117,7 +117,7 @@ Based on the established patterns of Japanese corporate expat life in the Klang 
 
 **KLCC / City Centre** — For those who prefer to walk to work in the central business district. High-rise living with premium facilities. Less family-oriented, excellent for singles and couples. Prices from RM1 million.
 
-**Damansara Heights** — A quieter, leafy alternative to Mont Kiara. Good for those who want more space and a calmer environment. Some landed property options (subject to purchase restrictions). Prices from RM1.5 million.
+**Damansara Heights** — A quieter, leafy alternative to Mont Kiara. Good for those who want more space and a calmer environment. Some landed property options (subject to purchase restrictions). Prices from RM1.5 million. A small number of branded freehold residences here — for example, **[Pavilion Imperial Residences](/)** — suit corporate expats whose company housing standards lean toward fully-branded, full-facility addresses in established prestige neighbourhoods.
 
 ---
 
@@ -126,5 +126,15 @@ Based on the established patterns of Japanese corporate expat life in the Klang 
 Some Japanese companies assign a housing allowance that is paid directly to the landlord (or added to salary for the employee to manage). If your company contributes a housing allowance, it is worth modelling whether that allowance, combined with a smaller personal contribution, could service a mortgage on a property you own rather than rent. The key variables are the allowance amount, your intended stay length, and how much the gap is between the allowance and your actual mortgage payment. Many Japanese expats who have done this analysis have concluded that buying beats renting — particularly for stays of 4 years or more.
 
 ---
+
+<div class="article-cta-card">
+  <div class="cta-eyebrow">Featured Development</div>
+  <h3>Pavilion Imperial Residences — Damansara Heights</h3>
+  <p>For Japanese corporate expats weighing a 4–5 year buy vs rent decision, Pavilion Imperial Residences offers branded freehold living in one of KL's most established prestige addresses — well-suited to company housing allowance redirection and long-hold investment.</p>
+  <div class="cta-actions">
+    <a href="/" class="cta-btn cta-btn-primary">Book a Viewing</a>
+    <a href="/" class="cta-btn cta-btn-secondary">Explore the Residence</a>
+  </div>
+</div>
 
 *Last updated: April 2026.*
