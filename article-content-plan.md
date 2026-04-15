@@ -21,7 +21,7 @@ This plan follows a **Pillar + Cluster** model:
         │
         ├── [C1] Can Japanese Buy Property in Malaysia? Rules & Costs
         ├── [C2] Mont Kiara: The Japanese Expat Neighbourhood Guide
-        ├── [C3] MM2H Visa + Property Purchase — Complete 2025 Guide
+        ├── [C3] MM2H Visa + Property Purchase — Complete 2026 Guide
         ├── [C4] Klang Valley for Japanese Work Expats — Buy vs Rent
         ├── [C5] Best Areas in Klang Valley for Japanese Families
         ├── [C6] Malaysia Property Investment Guide for Japanese Buyers
@@ -66,18 +66,18 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 ## Pillar Article
 
 ### Title
-**"The Complete Guide to Buying Property in Klang Valley as a Japanese Buyer (2025)"**
-**日本語版：「マレーシア・クランバレーで不動産を購入する日本人のための完全ガイド（2025年版）」**
+**"The Complete Guide to Buying Property in Klang Valley as a Japanese Buyer (2026)"**
+**日本語版：「マレーシア・クランバレーで不動産を購入する日本人のための完全ガイド（2026年版）」**
 
 ### Target Keywords
 | Language | Keyword | Intent |
 |---|---|---|
 | EN | buy property Malaysia Japanese | Transactional |
 | EN | Klang Valley property guide foreigner | Informational |
-| EN | Malaysia property rules foreigner 2025 | Informational |
+| EN | Malaysia property rules foreigner 2026 | Informational |
 | JP | マレーシア 不動産 購入 日本人 | Transactional |
 | JP | クランバレー 外国人 物件 購入ガイド | Informational |
-| JP | マレーシア 不動産 規制 2025 | Informational |
+| JP | マレーシア 不動産 規制 2026 | Informational |
 | EN | Kuala Lumpur property guide Japanese buyer | Informational |
 | EN | buy property Kuala Lumpur foreigner | Transactional |
 | EN | Mont Kiara property buy Japanese | Transactional |
@@ -177,7 +177,7 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 | JP | モントキアラ 日本人 ガイド | Informational |
 | JP | モントキアラ 物件 日本人 | Transactional |
 | JP | モントキアラ 日本人学校 近く 物件 | Transactional |
-| EN | Mont Kiara condo price 2025 | Informational |
+| EN | Mont Kiara condo price 2026 | Informational |
 | EN | Mont Kiara area guide Kuala Lumpur | Informational |
 | JP | モントキアラ コンドミニアム 価格 | Informational |
 
@@ -214,7 +214,7 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 | Language | Keyword | Intent |
 |---|---|---|
 | EN | Malaysia MM2H property purchase | Transactional |
-| EN | MM2H 2025 Japanese applicant guide | Informational |
+| EN | MM2H 2026 Japanese applicant guide | Informational |
 | EN | Malaysia long stay visa property owner | Informational |
 | EN | Malaysia second home Japanese retire | Informational |
 | JP | マレーシア MM2H 不動産 購入 | Transactional |
@@ -407,12 +407,12 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 | Language | Keyword | Intent |
 |---|---|---|
 | EN | Kuala Lumpur property guide Japanese | Informational |
-| EN | buy property Kuala Lumpur foreigner 2025 | Transactional |
+| EN | buy property Kuala Lumpur foreigner 2026 | Transactional |
 | EN | Kuala Lumpur condo for sale foreigner | Transactional |
 | EN | KL real estate guide Japanese buyer | Informational |
 | EN | Kuala Lumpur property price foreigner | Informational |
 | JP | クアラルンプール 不動産 購入ガイド 日本人 | Informational |
-| JP | クアラルンプール コンドミニアム 外国人 購入 2025 | Transactional |
+| JP | クアラルンプール コンドミニアム 外国人 購入 2026 | Transactional |
 | JP | KL 物件 購入 日本人 | Transactional |
 | JP | クアラルンプール 不動産価格 外国人 | Informational |
 
@@ -488,7 +488,7 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 
 ---
 
-### C10 — Top Mont Kiara Condos for Japanese Buyers: Development Comparison Guide (2025)
+### C10 — Top Mont Kiara Condos for Japanese Buyers: Development Comparison Guide (2026)
 
 **Slug:** `/mont-kiara-best-condos-japanese-buyers`
 **日本語スラッグ：** `/ja/mont-kiara-best-condo-nihonjin`
@@ -496,13 +496,13 @@ The pillar's CTA section is more prominent than the cluster CTA card: a full lea
 #### Target Keywords
 | Language | Keyword | Intent |
 |---|---|---|
-| EN | Mont Kiara best condo buy 2025 | Transactional |
+| EN | Mont Kiara best condo buy 2026 | Transactional |
 | EN | Mont Kiara property comparison Japanese | Informational |
 | EN | Mont Kiara condo price per sqft | Informational |
 | EN | Mont Kiara new development review | Informational |
 | EN | best condo Mont Kiara expat family | Transactional |
 | JP | モントキアラ コンドミニアム おすすめ 日本人 | Transactional |
-| JP | モントキアラ 物件比較 2025 | Informational |
+| JP | モントキアラ 物件比較 2026 | Informational |
 | JP | モントキアラ マンション 価格 坪単価 | Informational |
 | JP | モントキアラ 新築 コンドミニアム | Transactional |
 
