@@ -148,4 +148,46 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/malaysia-fudosan-rimawari-hosho-grr.html"/>
     <priority>0.7</priority>
   </url>
+
+  <!-- C8: Kuala Lumpur -->
+  <url>
+    <loc>https://pavilion.asianews.blog/en/articles/kuala-lumpur-property-guide-japanese-buyers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/kuala-lumpur-property-guide-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/kuala-lumpur-fudosan-guide-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pavilion.asianews.blog/ja/articles/kuala-lumpur-fudosan-guide-nihonjin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/kuala-lumpur-property-guide-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/kuala-lumpur-fudosan-guide-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- C9: KLCC / Bukit Bintang -->
+  <url>
+    <loc>https://pavilion.asianews.blog/en/articles/klcc-bukit-bintang-property-japanese-buyers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klcc-bukit-bintang-property-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klcc-bukit-bintang-fudosan-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pavilion.asianews.blog/ja/articles/klcc-bukit-bintang-fudosan-nihonjin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/klcc-bukit-bintang-property-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/klcc-bukit-bintang-fudosan-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- C10: Mont Kiara Condos -->
+  <url>
+    <loc>https://pavilion.asianews.blog/en/articles/mont-kiara-best-condos-japanese-buyers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/mont-kiara-best-condos-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/mont-kiara-best-condo-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pavilion.asianews.blog/ja/articles/mont-kiara-best-condo-nihonjin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/articles/mont-kiara-best-condos-japanese-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/articles/mont-kiara-best-condo-nihonjin.html"/>
+    <priority>0.7</priority>
+  </url>
 </urlset>
