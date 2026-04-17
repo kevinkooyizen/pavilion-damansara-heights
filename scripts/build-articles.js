@@ -41,14 +41,14 @@ function getHreflangTags(slug, lang) {
   else                    enSlug = slug;
   const pair = ARTICLE_PAIRS[enSlug];
   if (!enSlug || !pair) return '';
-  const enUrl = `${SITE_BASE}/en/articles/${enSlug}.html`;
-  const jaUrl = `${SITE_BASE}/ja/articles/${pair.ja}.html`;
-  const zhUrl = `${SITE_BASE}/zh/articles/${pair.zh}.html`;
+  const enUrl = `${SITE_BASE}/en/articles/${enSlug}`;
+  const jaUrl = `${SITE_BASE}/ja/articles/${pair.ja}`;
+  const zhUrl = `${SITE_BASE}/zh/articles/${pair.zh}`;
   return `    <link rel="alternate" hreflang="en" href="${enUrl}" />\n    <link rel="alternate" hreflang="ja" href="${jaUrl}" />\n    <link rel="alternate" hreflang="zh-CN" href="${zhUrl}" />\n    <link rel="alternate" hreflang="x-default" href="${enUrl}" />`;
 }
 
 const HTML_LANG = { en: 'en', ja: 'ja', zh: 'zh-CN' };
-const ARTICLES_INDEX_PATH = { en: '/en/articles.html', ja: '/ja/articles.html', zh: '/zh/articles.html' };
+const ARTICLES_INDEX_PATH = { en: '/en/articles', ja: '/ja/articles', zh: '/zh/articles' };
 const BACK_LINK_LABEL = { en: '← Back to Insights', ja: '← インサイト一覧に戻る', zh: '← 返回文章列表' };
 
 const getShellHTML = (title, metaDesc, lang, hreflangTags) => `
@@ -98,9 +98,9 @@ function processArticle(filePath, lang) {
 
   let htmlContent = marked(markdownContent);
 
-  // Auto-append .html to any internal cross-reference that starts with / and has no extension
+  // Rewrite internal cross-references to clean URLs (no .html extension)
   const articlePrefix = `/${lang}/articles`;
-  htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, `href="${articlePrefix}$1.html"`);
+  htmlContent = htmlContent.replace(/href="(\/[^."]+)"/g, `href="${articlePrefix}$1"`);
 
   // Hide SEO metadata from visual rendering but keep in DOM for crawlers
   htmlContent = htmlContent.replace(/<p><strong>Meta description:<\/strong>.*?<\/p>/gs, match => `<div style="display: none;">${match}</div>`);

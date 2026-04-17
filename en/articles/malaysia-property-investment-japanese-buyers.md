@@ -20,14 +20,14 @@ For the legal rules and minimum purchase prices, see: [Can Japanese Buy Property
 
 Tokyo is one of the most expensive property markets in Asia. KL is not. This creates a structural price-to-quality gap that favours KL buyers.
 
-| City | Approx. Price per sqm (mid-market condo) |
-|---|---|
-| Tokyo (central, e.g. Minato-ku) | USD 12,000 – 20,000 |
-| Singapore (central) | USD 18,000 – 28,000 |
-| Hong Kong (central) | USD 25,000 – 40,000 |
-| Kuala Lumpur (KLCC / prime) | USD 3,000 – 6,500 |
-| Kuala Lumpur (mid-market, e.g. Mont Kiara) | USD 1,800 – 3,500 |
-| Bangkok (central) | USD 4,000 – 8,000 |
+| City                                       | Approx. Price per sqm (mid-market condo) |
+| ------------------------------------------ | ---------------------------------------- |
+| Tokyo (central, e.g. Minato-ku)            | USD 12,000 – 20,000                      |
+| Singapore (central)                        | USD 18,000 – 28,000                      |
+| Hong Kong (central)                        | USD 25,000 – 40,000                      |
+| Kuala Lumpur (KLCC / prime)                | USD 3,000 – 6,500                        |
+| Kuala Lumpur (mid-market, e.g. Mont Kiara) | USD 1,800 – 3,500                        |
+| Bangkok (central)                          | USD 4,000 – 8,000                        |
 
 Kuala Lumpur prime property is priced at roughly one-quarter of Tokyo for comparable quality. This means Japanese investors can purchase significantly larger, better-specified properties for the same yen outlay — or buy in KL and hold Tokyo-market capital in higher-yielding alternatives.
 
@@ -35,12 +35,12 @@ Kuala Lumpur prime property is priced at roughly one-quarter of Tokyo for compar
 
 Rental yields in KL substantially outperform Tokyo:
 
-| Market | Typical Gross Rental Yield |
-|---|---|
-| Tokyo (central) | 2.0% – 3.5% |
-| Osaka | 3.5% – 5.0% |
-| Singapore | 2.5% – 3.5% |
-| Kuala Lumpur (expat zones) | 4.0% – 7.0% |
+| Market                     | Typical Gross Rental Yield |
+| -------------------------- | -------------------------- |
+| Tokyo (central)            | 2.0% – 3.5%                |
+| Osaka                      | 3.5% – 5.0%                |
+| Singapore                  | 2.5% – 3.5%                |
+| Kuala Lumpur (expat zones) | 4.0% – 7.0%                |
 
 The KL yield advantage is driven by the expat rental market. There is a constant flow of corporate expats — from Japan, Korea, Europe, and beyond — who need quality rental accommodation in KL's major expat corridors. This creates structural demand that supports yields.
 
@@ -97,6 +97,7 @@ The MRT3 Circle Line had its **Final Railway Scheme approved in July 2025**, wit
 It is important to be honest about the risks, which any serious Japanese investor will want to understand.
 
 ### Guaranteed Return Rate (GRR) Schemes
+
 Many developers offer 5% to 8% guaranteed returns for 3 to 5 years. While tempting, these often mask inflated purchase prices and carry significant default risks. For a complete analysis of why we recommend organic yields over guarantees, see our guide: [The Truth About Guaranteed Return Rates (GRR)](/guaranteed-return-rate-malaysia-property).
 
 ### Oversupply in Certain Submarkets
@@ -130,9 +131,9 @@ When you sell, the Real Property Gains Tax (RPGT) applies to your net gain.
 Foreigners do **not** benefit from the tapered scale that applies to Malaysian citizens and PRs. The rates are:
 
 | Holding Period | RPGT Rate (Foreigner) |
-|---|---|
-| Years 1–5 | 30% of net gain |
-| Year 6 onwards | 10% of net gain |
+| -------------- | --------------------- |
+| Years 1–5      | 30% of net gain       |
+| Year 6 onwards | 10% of net gain       |
 
 There is **no further taper to 0%** for foreigners — even after a decade of ownership, you will pay 10% on chargeable gains. The single biggest threshold to cross is the year 5 → year 6 boundary, after which the rate drops from 30% to 10%.
 
@@ -202,4 +203,4 @@ Management fees typically run 8% to 12% of monthly rental income. Factor this in
   </div>
 </div>
 
-*Last updated: April 2026. All figures are illustrative and based on market conditions as of early 2026. Investment outcomes are not guaranteed. Consult a licensed financial advisor before committing to an investment.*
+_Last updated: April 2026. All figures are illustrative and based on market conditions as of early 2026. Investment outcomes are not guaranteed. Consult a licensed financial advisor before committing to an investment._

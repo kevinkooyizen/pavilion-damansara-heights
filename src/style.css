@@ -238,6 +238,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   letter-spacing: 1.5px;
   border: 1px solid transparent;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .btn-gold {
@@ -540,6 +542,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero-title {
     font-size: 3rem;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .btn-large {
+    height: auto;
+    min-height: 50px;
+    padding: 10px 30px;
+    white-space: normal;
   }
 }
 

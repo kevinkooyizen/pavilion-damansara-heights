@@ -16,17 +16,17 @@ export function renderHeader({ fixed = false, full = false } = {}) {
     en: {
       about: "Overview", facilities: "Facilities", floorplans: "Floor Plans", location: "Location",
       book: "Book Viewing", call: "📞 Call Now", articles: "Insights", langText: "English",
-      home: "/en/", homeLink: "/en/", articlesLink: "/en/articles.html", homeLabel: "Home"
+      home: "/en/", homeLink: "/en/", articlesLink: "/en/articles", homeLabel: "Home"
     },
     ja: {
       about: "概要", facilities: "施設", floorplans: "間取り図", location: "所在地",
       book: "内覧予約", call: "📞 今すぐ電話", articles: "記事", langText: "日本語",
-      home: "/ja/", homeLink: "/ja/", articlesLink: "/ja/articles.html", homeLabel: "ホーム"
+      home: "/ja/", homeLink: "/ja/", articlesLink: "/ja/articles", homeLabel: "ホーム"
     },
     zh: {
       about: "概览", facilities: "设施", floorplans: "户型图", location: "位置",
       book: "预约看房", call: "📞 立即致电", articles: "文章", langText: "中文",
-      home: "/zh/", homeLink: "/zh/", articlesLink: "/zh/articles.html", homeLabel: "首页"
+      home: "/zh/", homeLink: "/zh/", articlesLink: "/zh/articles", homeLabel: "首页"
     }
   };
   const dict = dicts[lang];
