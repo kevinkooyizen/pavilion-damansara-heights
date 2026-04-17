@@ -86,6 +86,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
           <div class="dropdown-content">
             <a href="${jaHref}">日本語</a>
             <a href="${enHref}">English</a>
+            <a href="${zhHref}">中文</a>
           </div>
         </div>
         <a href="${bookHref}" class="btn btn-gold btn-large" style="width: 100%;">${dict.book}</a>
