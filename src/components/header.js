@@ -7,38 +7,34 @@ import logoUrl from '../assets/logo.webp'
  * @param {boolean} options.full  - If true, render full nav + actions (homepage only)
  */
 export function renderHeader({ fixed = false, full = false } = {}) {
-  const isEn = document.documentElement.lang === 'en';
-  
-  // Translation simple dict for header items
-  const dict = isEn ? {
-    about: "Overview",
-    facilities: "Facilities",
-    floorplans: "Floor Plans",
-    location: "Location",
-    book: "Book Viewing",
-    call: "📞 Call Now",
-    articles: "Insights",
-    langText: "English",
-    home: "/en/",
-    homeLink: "/en/",
-    articlesLink: "/en/articles.html"
-  } : {
-    about: "概要",
-    facilities: "施設",
-    floorplans: "間取り図",
-    location: "所在地",
-    book: "内覧予約",
-    call: "📞 今すぐ電話",
-    articles: "記事",
-    langText: "日本語",
-    home: "/ja/",
-    homeLink: "/ja/",
-    articlesLink: "/ja/articles.html"
+  const htmlLang = (document.documentElement.lang || 'en').toLowerCase();
+  const lang = htmlLang.startsWith('zh') ? 'zh'
+             : htmlLang.startsWith('ja') ? 'ja'
+             : 'en';
+
+  const dicts = {
+    en: {
+      about: "Overview", facilities: "Facilities", floorplans: "Floor Plans", location: "Location",
+      book: "Book Viewing", call: "📞 Call Now", articles: "Insights", langText: "English",
+      home: "/en/", homeLink: "/en/", articlesLink: "/en/articles.html", homeLabel: "Home"
+    },
+    ja: {
+      about: "概要", facilities: "施設", floorplans: "間取り図", location: "所在地",
+      book: "内覧予約", call: "📞 今すぐ電話", articles: "記事", langText: "日本語",
+      home: "/ja/", homeLink: "/ja/", articlesLink: "/ja/articles.html", homeLabel: "ホーム"
+    },
+    zh: {
+      about: "概览", facilities: "设施", floorplans: "户型图", location: "位置",
+      book: "预约看房", call: "📞 立即致电", articles: "文章", langText: "中文",
+      home: "/zh/", homeLink: "/zh/", articlesLink: "/zh/articles.html", homeLabel: "首页"
+    }
   };
+  const dict = dicts[lang];
 
   // Detect other language URLs from hreflang or fallback
   const jaHref = document.querySelector('link[hreflang="ja"]')?.getAttribute('href') || '/ja/';
   const enHref = document.querySelector('link[hreflang="en"]')?.getAttribute('href') || '/en/';
+  const zhHref = document.querySelector('link[hreflang="zh-CN"]')?.getAttribute('href') || '/zh/';
 
   const bookHref = `${dict.homeLink}#contact`;
   const telHref = 'tel:+60312345678';
@@ -51,7 +47,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
       <a href="${dict.homeLink}#location">${dict.location}</a>
     </nav>` : `
     <nav class="nav-links">
-      <a href="${dict.homeLink}">${isEn ? 'Home' : 'ホーム'}</a>
+      <a href="${dict.homeLink}">${dict.homeLabel}</a>
       <a href="${dict.articlesLink}">${dict.articles}</a>
     </nav>`;
 
@@ -62,6 +58,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
         <div class="dropdown-content">
           <a href="${jaHref}">日本語</a>
           <a href="${enHref}">English</a>
+          <a href="${zhHref}">中文</a>
         </div>
       </div>
       <a href="${bookHref}" class="btn btn-gold">${dict.book}</a>
@@ -76,7 +73,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
   const mobileMenu = `
     <div class="mobile-menu" id="mobile-menu">
       <nav class="mobile-menu-links">
-        <a href="${dict.homeLink}">${isEn ? 'Home' : 'ホーム'}</a>
+        <a href="${dict.homeLink}">${dict.homeLabel}</a>
         <a href="${dict.articlesLink}">${dict.articles}</a>
         <a href="${dict.homeLink}#about">${dict.about}</a>
         <a href="${dict.homeLink}#amenities">${dict.facilities}</a>

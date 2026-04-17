@@ -6,6 +6,7 @@ import { commonHeadTags } from './src/head-common.js';
 const root = resolve(__dirname);
 const enPath = resolve(root, 'en');
 const jaPath = resolve(root, 'ja');
+const zhPath = resolve(root, 'zh');
 
 const getHtmlEntries = () => {
   const entries = {};
@@ -53,6 +54,25 @@ const getHtmlEntries = () => {
     fs.readdirSync(jaArticlesPath).forEach(file => {
       if (file.endsWith('.html')) {
         entries[`ja_article_${file.replace('.html', '')}`] = resolve(jaArticlesPath, file);
+      }
+    });
+  }
+
+  // Chinese pages (zh/index.html, zh/articles.html)
+  if (fs.existsSync(zhPath)) {
+    fs.readdirSync(zhPath).forEach(file => {
+      if (file.endsWith('.html')) {
+        entries[`zh_${file.replace('.html', '')}`] = resolve(zhPath, file);
+      }
+    });
+  }
+
+  // Chinese articles (zh/articles/*.html)
+  const zhArticlesPath = resolve(zhPath, 'articles');
+  if (fs.existsSync(zhArticlesPath)) {
+    fs.readdirSync(zhArticlesPath).forEach(file => {
+      if (file.endsWith('.html')) {
+        entries[`zh_article_${file.replace('.html', '')}`] = resolve(zhArticlesPath, file);
       }
     });
   }

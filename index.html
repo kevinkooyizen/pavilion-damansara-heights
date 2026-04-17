@@ -8,6 +8,7 @@
 
     <link rel="alternate" hreflang="ja" href="https://pavilion.asianews.blog/ja/" />
     <link rel="alternate" hreflang="en" href="https://pavilion.asianews.blog/en/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://pavilion.asianews.blog/zh/" />
     <link rel="alternate" hreflang="x-default" href="https://pavilion.asianews.blog/" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,7 +19,9 @@
     <script>
       (function () {
         var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        var target = lang.indexOf('ja') === 0 ? '/ja/' : '/en/';
+        var target = lang.indexOf('ja') === 0 ? '/ja/'
+                   : lang.indexOf('zh') === 0 ? '/zh/'
+                   : '/en/';
         location.replace(target);
       })();
     </script>
@@ -40,6 +43,7 @@
       <nav>
         <a href="/en/">English</a>
         <a href="/ja/">日本語</a>
+        <a href="/zh/">中文</a>
       </nav>
     </main>
   </body>
