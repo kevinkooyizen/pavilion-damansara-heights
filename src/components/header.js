@@ -9,8 +9,8 @@ import logoUrl from '../assets/logo.webp'
 export function renderHeader({ fixed = false, full = false } = {}) {
   const htmlLang = (document.documentElement.lang || 'en').toLowerCase();
   const lang = htmlLang.startsWith('zh') ? 'zh'
-             : htmlLang.startsWith('ja') ? 'ja'
-             : 'en';
+    : htmlLang.startsWith('ja') ? 'ja'
+      : 'en';
 
   const dicts = {
     en: {
@@ -45,6 +45,7 @@ export function renderHeader({ fixed = false, full = false } = {}) {
       <a href="${dict.homeLink}#amenities">${dict.facilities}</a>
       <a href="${dict.homeLink}#floorplan">${dict.floorplans}</a>
       <a href="${dict.homeLink}#location">${dict.location}</a>
+      <a href="${dict.articlesLink}">${dict.articles}</a>
     </nav>` : `
     <nav class="nav-links">
       <a href="${dict.homeLink}">${dict.homeLabel}</a>
@@ -74,11 +75,11 @@ export function renderHeader({ fixed = false, full = false } = {}) {
     <div class="mobile-menu" id="mobile-menu">
       <nav class="mobile-menu-links">
         <a href="${dict.homeLink}">${dict.homeLabel}</a>
-        <a href="${dict.articlesLink}">${dict.articles}</a>
         <a href="${dict.homeLink}#about">${dict.about}</a>
         <a href="${dict.homeLink}#amenities">${dict.facilities}</a>
         <a href="${dict.homeLink}#floorplan">${dict.floorplans}</a>
         <a href="${dict.homeLink}#location">${dict.location}</a>
+        <a href="${dict.articlesLink}">${dict.articles}</a>
       </nav>
       <div class="mobile-menu-actions">
         <div class="dropdown mobile-dropdown">
