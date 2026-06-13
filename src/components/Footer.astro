@@ -17,7 +17,7 @@ const articlesLink = `/${lang}/articles`;
   <footer class="footer" id="contact">
     <div class="scroll-reveal" style="max-width: 500px; margin: 0 auto 100px;">
       <h2 style="font-size: 2.2rem; margin-bottom: 25px; line-height: 1.2;">{t('form_title')}</h2>
-      <form style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
+      <form id="leadForm" data-lang={lang} data-thanks={t('form_thanks')} style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
         <input type="text" placeholder={t('form_name')} style="padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; width: 100%; box-sizing: border-box; border-radius: 2px;" />
         <input type="email" placeholder={t('form_email')} style="padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; width: 100%; box-sizing: border-box; border-radius: 2px;" />
         <button type="submit" class="btn btn-gold btn-large" style="margin-top: 15px; font-size: 0.9rem;">{t('form_btn')}</button>
