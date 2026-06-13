@@ -11,6 +11,7 @@ function initSite() {
   const header = document.getElementById('header');
   const backToTop = document.getElementById('backToTop');
   const leadForm = document.getElementById('leadForm');
+  const whatsappBtn = document.getElementById('whatsappBtn');
 
   const onScroll = () => {
     const scrolled = window.scrollY > 50;
@@ -47,6 +48,16 @@ function initSite() {
       message.style.cssText =
         'color: var(--gold); font-size: 1.1rem; text-align: center; padding: 20px 0; margin: 0;';
       leadForm.replaceWith(message);
+    });
+  }
+
+  // Track clicks on the floating WhatsApp button (no destination wired up yet;
+  // analytics only).
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', () => {
+      window.gtag?.('event', 'whatsapp_click', {
+        button_location: 'floating_action',
+      });
     });
   }
 
