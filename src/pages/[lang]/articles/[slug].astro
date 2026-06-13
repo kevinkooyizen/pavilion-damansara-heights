@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { Locale } from '../../../consts';
+import { parseArticleId } from '../../../consts';
+import { useTranslations } from '../../../i18n/utils';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+
+  // Group the three locale versions of each topic by their shared key.
+  const byKey: Record<string, Partial<Record<Locale, string>>> = {};
+  for (const a of articles) {
+    const [lang, slug] = parseArticleId(a.id);
+    (byKey[a.data.translationKey] ||= {})[lang] = slug;
+  }
+
+  return articles.map((entry) => {
+    const [lang, slug] = parseArticleId(entry.id);
+    const group = byKey[entry.data.translationKey] || {};
+    const urlFor = (l: Locale) => (group[l] ? `/${l}/articles/${group[l]}` : `/${l}/articles`);
+    const alternates = {
+      en: urlFor('en'),
+      ja: urlFor('ja'),
+      zh: urlFor('zh'),
+      xDefault: group.en ? `/en/articles/${group.en}` : '/',
+    };
+    return { params: { lang, slug }, props: { entry, alternates } };
+  });
+}
+
+const { entry, alternates } = Astro.props;
+const [lang] = parseArticleId(entry.id);
+const t = useTranslations(lang);
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${entry.data.title} | Pavilion Imperial Residences`}
+  description={entry.data.description}
+  alternates={alternates}
+  headerFull={false}
+  headerFixed={true}
+>
+  <div class="article-page">
+    <a href={`/${lang}/articles`} class="back-link">{t('back_link')}</a>
+    <h1>{entry.data.title}</h1>
+    <Content />
+  </div>
+  <Footer lang={lang} variant="minimal" />
+</BaseLayout>

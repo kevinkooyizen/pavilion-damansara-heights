@@ -6,38 +6,41 @@
 A pixel-perfect, premium website of Pavilion Damansara Heights luxury real estate.
 
 ## Context
-The application leverages an extremely lightweight Vanilla JS + HTML/CSS structure bundled with Vite.
+A static, trilingual (`ja`/`en`/`zh`) marketing site built with **Astro**. Shared layouts and components render all chrome (header, footer, SEO) server-side; articles are an Astro content collection compiled from Markdown. Output is fully static and deployed to Netlify (`https://pavilion.asianews.blog`).
 
 ## Tech Stack
-- Vanilla HTML/JS/CSS (No framework)
-- Vite (fast local development & build tool)
+- Astro (static output, no UI framework)
+- `@astrojs/sitemap` (auto-generated `sitemap-index.xml` with hreflang alternates)
+- Vanilla CSS design system (`src/styles/global.css`) + small TypeScript client scripts
 
 ## Key Project Architecture
-Every locale lives under its own prefix (`/ja/`, `/en/`, `/zh/`). Root `/` is a language router that auto-redirects by `navigator.language` with a visible fallback picker.
-- `index.html`: Language router at `/` (redirects to `/ja/`, `/en/`, or `/zh/`; hreflang `x-default`).
-- `ja/index.html`: The Japanese homepage (served at `/ja/`).
-- `en/index.html`: The English homepage (served at `/en/`).
-- `zh/index.html`: The Simplified Chinese homepage (served at `/zh/`, `<html lang="zh-CN">`).
-- `ja/articles.html`: The Japanese article index (served at `/ja/articles.html`).
-- `en/articles.html`: The English article index (served at `/en/articles.html`).
-- `zh/articles.html`: The Simplified Chinese article index (served at `/zh/articles.html`).
-- `articles.html`: Redirect stub → `/ja/articles.html` (preserves old URL for SEO).
-- `src/style.css`: Contains the design system tokens (font families `Libre Baskerville`, `Montserrat`), animation classes `.scroll-reveal`, and all responsiveness parameters.
-- `src/main.js`: Adds interactivity, primarily managing sticky header classes, mobile hamburger drawer toggling, and initializing `IntersectionObserver` for all scroll transitions.
-- `src/components/header.js`: Dynamic component that manages cross-linking between localized versions of pages using `hreflang` tags.
-- `public/images/`: Highly optimized, raw static imagery.
+Every locale lives under its own prefix (`/ja/`, `/en/`, `/zh/`). Root `/` is a language router that auto-redirects by `navigator.language` with a visible fallback picker. Routing uses a `[lang]` dynamic segment (**not** Astro's built-in i18n routing) so per-locale article slugs can diverge.
+
+- `src/pages/index.astro`: Language router at `/` (redirects to `/ja/`, `/en/`, `/zh/`; hreflang `x-default`).
+- `src/pages/[lang]/index.astro`: Homepage per locale (served at `/ja/`, `/en/`, `/zh/`), generated via `getStaticPaths` over `LOCALES`.
+- `src/pages/[lang]/articles/index.astro`: Article index per locale (`/ja/articles`, etc.), data-driven from the articles collection (sorted by `order`).
+- `src/pages/[lang]/articles/[slug].astro`: Article detail pages (`/<lang>/articles/<slug>`), generated from the collection.
+- `src/layouts/BaseLayout.astro`: Owns `<head>` (gtag, favicons, fonts, viewport), SEO/OG/Twitter + hreflang tags, renders `<Header>`, the page slot, and the global client script.
+- `src/components/Header.astro`, `Footer.astro`, `FloatingActions.astro`: Server-rendered chrome. `Header` has full/minimal nav and fixed/transparent variants; `Footer` has `full` (homepage lead form) and `minimal` variants.
+- `src/i18n/{en,ja,zh}.json` + `src/i18n/utils.ts`: Per-locale UI strings and the `useTranslations(lang)` helper. Keys mirror the original `data-i18n` names.
+- `src/consts.ts`: `LOCALES`, `HTML_LANG` (maps `zh` → `zh-CN`), `SITE_BASE`, and `parseArticleId`.
+- `src/scripts/site.ts`: Sticky header on scroll, back-to-top, and `IntersectionObserver` scroll-reveal.
+- `src/styles/global.css`: Design system tokens (fonts `Libre Baskerville`, `Montserrat`), `.scroll-reveal`, and all responsiveness.
+- `public/`: Static assets served at root — `images/`, favicons, `site.webmanifest`, `_redirects`, `robots.txt`, and the logo (`/images/logo.webp`).
+
+URLs are clean (no `.html`): `build.format: 'directory'` emits `/<path>/index.html`. Legacy redirects (`/articles` → `/ja/articles`) live in `public/_redirects` (Netlify).
 
 ## Articles System
-The project includes a compilation script that parses Markdown insights into fully-styled standalone HTML pages. 
-- **Compilation Engine**: A custom Node.js script (`scripts/build-articles.js`) utilizes `marked` to build pristine `.html` files.
-  - **SEO Metatags**: The compiler automatically parses SEO tags into `<div style="display: none;">`.
-  - **Internal Linking**: The compiler maps SEO-friendly slugs to the specific output route paths.
-  - **Hreflang**: The compiler injects trilingual `<link rel="alternate" hreflang="en/ja/zh-CN">` tags + `x-default` into each article.
-  - **Language Detection**: Articles under `ja/articles/` use `<html lang="ja">`, `en/articles/` use `<html lang="en">`, `zh/articles/` use `<html lang="zh-CN">`.
-- **Index UI**: Linked cohesively inside `ja/articles.html` (Japanese), `en/articles.html` (English), and `zh/articles.html` (Simplified Chinese).
+Articles are an Astro **content collection** (`src/content/articles/<lang>/*.md`), defined in `src/content.config.ts`.
+- **Frontmatter (YAML)**: `title`, `description` (meta), `cardTitle` + `excerpt` (index-card copy), `keywords` (reference only — not rendered), `translationKey` (shared across the 3 locale versions of a topic), and `order` (index ordering).
+- **Rendering**: `[slug].astro` renders `<h1>{title}</h1>` then the Markdown body via `render(entry)`. Raw HTML inside Markdown passes through.
+- **Internal links**: cross-article links resolve to `/<lang>/articles/<slug>` (normalized at content-migration time).
+- **Hreflang**: derived from the `translationKey` grouping — emitted in each page `<head>` and in the sitemap (via `serialize` in `astro.config.mjs`, fed by `scripts/article-map.mjs`). `x-default` points to the English article.
+- **Sitemap**: auto-generated by `@astrojs/sitemap` at `/sitemap-index.xml`; advertised in `public/robots.txt`.
+- **Language**: `<html lang>` is `en` / `ja` / `zh-CN` per `HTML_LANG`.
 
 ### Article Slugs
-Each row is a single content topic translated across three locales — used by `scripts/build-articles.js` to emit hreflang triplets between topically equivalent pages.
+Each row is a single content topic translated across three locales. The relationship is encoded by the shared `translationKey` frontmatter field (the English slug) and drives the hreflang triplets and the language switcher.
 
 | English (under `/en/articles/`) | Japanese (under `/ja/articles/`) | Simplified Chinese (under `/zh/articles/`) |
 | :--- | :--- | :--- |
@@ -59,7 +62,7 @@ The Simplified Chinese hub uses **pinyin slugs** (lowercase, hyphenated) for Bai
 
 ```bash
 npm install        # install dependencies
-npm run dev        # start dev server (http://localhost:5173)
+npm run dev        # start dev server (http://localhost:4321)
 npm run build      # production build (outputs to dist/)
 npm run preview    # preview production build locally
 ```

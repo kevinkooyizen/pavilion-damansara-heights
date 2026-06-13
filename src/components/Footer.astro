@@ -1,0 +1,57 @@
+---
+import type { Locale } from '../consts';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Locale;
+  /** "full" = homepage footer with the lead form; "minimal" = logo + tagline. */
+  variant?: 'full' | 'minimal';
+}
+
+const { lang, variant = 'minimal' } = Astro.props;
+const t = useTranslations(lang);
+const articlesLink = `/${lang}/articles`;
+---
+
+{variant === 'full' ? (
+  <footer class="footer" id="contact">
+    <div class="scroll-reveal" style="max-width: 500px; margin: 0 auto 100px;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 25px; line-height: 1.2;">{t('form_title')}</h2>
+      <form style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
+        <input type="text" placeholder={t('form_name')} style="padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; width: 100%; box-sizing: border-box; border-radius: 2px;" />
+        <input type="email" placeholder={t('form_email')} style="padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; width: 100%; box-sizing: border-box; border-radius: 2px;" />
+        <button type="submit" class="btn btn-gold btn-large" style="margin-top: 15px; font-size: 0.9rem;">{t('form_btn')}</button>
+      </form>
+    </div>
+
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 50px; text-align: left;">
+      <div>
+        <img src="/images/logo.webp" alt="Pavilion Damansara Heights Logo" style="height: 40px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1); opacity: 0.9;" />
+        <p style="font-size: 0.85rem; color: #888; line-height: 1.8;" set:html={t('footer_desc')} />
+      </div>
+      <div>
+        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 25px; letter-spacing: 1px;">{t('ql_title')}</h4>
+        <ul style="list-style: none; padding: 0; font-size: 0.85rem; color: #999;">
+          <li style="margin-bottom: 12px;"><a href="#hero" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">{t('footer_link_overview')}</a></li>
+          <li style="margin-bottom: 12px;"><a href="#floorplan" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">{t('footer_link_floorplans')}</a></li>
+          <li style="margin-bottom: 12px;"><a href="#location" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">{t('footer_link_location')}</a></li>
+          <li style="margin-bottom: 12px;"><a href={articlesLink} style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='inherit'">{t('footer_link_articles')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 25px; letter-spacing: 1px;">{t('contact_title')}</h4>
+        <p style="font-size: 0.85rem; color: #999; margin-bottom: 15px; display: flex; gap: 10px;"><span style="color: var(--gold)">📍</span> {t('contact1')}</p>
+        <p style="font-size: 0.85rem; color: #999; margin-bottom: 15px; display: flex; gap: 10px;"><span style="color: var(--gold)">📞</span> {t('contact2')}</p>
+      </div>
+    </div>
+  </footer>
+) : (
+  <footer class="footer" style="margin-top: 100px;">
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 50px; text-align: left; max-width: 1200px; margin: 0 auto;">
+      <div>
+        <img src="/images/logo.webp" alt="Pavilion Damansara Heights Logo" style="height: 40px; display: block; margin-bottom: 15px; filter: brightness(0) invert(1); opacity: 0.9;" />
+        <p style="font-size: 0.85rem; color: #888; line-height: 1.8;" set:html={t('footer_desc')} />
+      </div>
+    </div>
+  </footer>
+)}

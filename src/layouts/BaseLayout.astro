@@ -1,0 +1,115 @@
+---
+import type { Locale } from '../consts';
+import { SITE_BASE, HTML_LANG } from '../consts';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+
+interface Alternates {
+  en: string;
+  ja: string;
+  zh: string;
+  xDefault: string;
+}
+
+interface OpenGraph {
+  title: string;
+  description: string;
+  image?: string;
+  url: string;
+  type?: string;
+}
+
+interface TwitterCard {
+  title: string;
+  description: string;
+  image?: string;
+  card?: string;
+}
+
+interface Props {
+  lang: Locale;
+  title: string;
+  description: string;
+  /** Locale URL paths (start with "/"); used for hreflang + language switcher. */
+  alternates: Alternates;
+  og?: OpenGraph;
+  twitter?: TwitterCard;
+  headerFull?: boolean;
+  headerFixed?: boolean;
+}
+
+const {
+  lang,
+  title,
+  description,
+  alternates,
+  og,
+  twitter,
+  headerFull = false,
+  headerFixed = false,
+} = Astro.props;
+
+const abs = (path: string) => (path.startsWith('http') ? path : `${SITE_BASE}${path}`);
+const switcher = { en: alternates.en, ja: alternates.ja, zh: alternates.zh };
+---
+
+<!doctype html>
+<html lang={HTML_LANG[lang]}>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-KQ6CEH0DXS"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KQ6CEH0DXS');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="alternate" hreflang="en" href={abs(alternates.en)} />
+    <link rel="alternate" hreflang="ja" href={abs(alternates.ja)} />
+    <link rel="alternate" hreflang="zh-CN" href={abs(alternates.zh)} />
+    <link rel="alternate" hreflang="x-default" href={abs(alternates.xDefault)} />
+
+    {og && (
+      <>
+        <meta property="og:title" content={og.title} />
+        <meta property="og:description" content={og.description} />
+        {og.image && <meta property="og:image" content={og.image} />}
+        <meta property="og:url" content={abs(og.url)} />
+        <meta property="og:type" content={og.type ?? 'website'} />
+        <meta property="og:site_name" content="Pavilion Imperial Residences" />
+      </>
+    )}
+
+    {twitter && (
+      <>
+        <meta name="twitter:card" content={twitter.card ?? 'summary_large_image'} />
+        <meta name="twitter:title" content={twitter.title} />
+        <meta name="twitter:description" content={twitter.description} />
+        {twitter.image && <meta name="twitter:image" content={twitter.image} />}
+      </>
+    )}
+  </head>
+  <body>
+    <Header lang={lang} full={headerFull} fixed={headerFixed} switcher={switcher} />
+    <slot />
+    <script>
+      import '../scripts/site.ts';
+    </script>
+  </body>
+</html>

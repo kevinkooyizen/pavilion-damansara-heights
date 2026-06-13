@@ -1,0 +1,129 @@
+---
+import type { Locale } from '../consts';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Locale;
+  /** Full nav (homepage) vs. minimal nav (subpages). */
+  full?: boolean;
+  /** Start in the scrolled state and keep it (article/index pages). */
+  fixed?: boolean;
+  /** Language-switcher targets for each locale. */
+  switcher: { en: string; ja: string; zh: string };
+}
+
+const { lang, full = false, fixed = false, switcher } = Astro.props;
+const t = useTranslations(lang);
+
+const homeLink = `/${lang}/`;
+const articlesLink = `/${lang}/articles`;
+const bookHref = `${homeLink}#contact`;
+const telHref = 'tel:+60312345678';
+const logoFilter = fixed ? '' : 'filter: brightness(0) invert(1);';
+---
+
+<header id="header" data-fixed={fixed ? 'true' : 'false'} class:list={[{ scrolled: fixed }]}>
+  <div class="header-container">
+    <div class="logo">
+      <a href={homeLink}>
+        <img
+          src="/images/logo.webp"
+          alt="Pavilion Damansara Heights Logo"
+          style={`height: 50px; display: block; ${logoFilter}`}
+          class="header-logo-img"
+        />
+      </a>
+    </div>
+
+    {full ? (
+      <nav class="nav-links">
+        <a href={`${homeLink}#about`}>{t('nav_about')}</a>
+        <a href={`${homeLink}#amenities`}>{t('nav_facilities')}</a>
+        <a href={`${homeLink}#floorplan`}>{t('nav_floorplans')}</a>
+        <a href={`${homeLink}#location`}>{t('nav_location')}</a>
+        <a href={articlesLink}>{t('nav_articles')}</a>
+      </nav>
+    ) : (
+      <nav class="nav-links">
+        <a href={homeLink}>{t('nav_home')}</a>
+        <a href={articlesLink}>{t('nav_articles')}</a>
+      </nav>
+    )}
+
+    <div class="nav-right">
+      <div class="nav-actions">
+        <div class="dropdown">
+          <button class="btn btn-outline lang-btn" style="color: inherit; border-color: inherit;">{t('header_lang')} ▾</button>
+          <div class="dropdown-content">
+            <a href={switcher.ja}>日本語</a>
+            <a href={switcher.en}>English</a>
+            <a href={switcher.zh}>中文</a>
+          </div>
+        </div>
+        <a href={bookHref} class="btn btn-gold">{t('header_book')}</a>
+        <a href={telHref} class="btn btn-outline call-btn" style="border-color: var(--gold); color: var(--gold)">{t('header_call')}</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu-links">
+      <a href={homeLink}>{t('nav_home')}</a>
+      <a href={`${homeLink}#about`}>{t('nav_about')}</a>
+      <a href={`${homeLink}#amenities`}>{t('nav_facilities')}</a>
+      <a href={`${homeLink}#floorplan`}>{t('nav_floorplans')}</a>
+      <a href={`${homeLink}#location`}>{t('nav_location')}</a>
+      <a href={articlesLink}>{t('nav_articles')}</a>
+    </nav>
+    <div class="mobile-menu-actions">
+      <div class="dropdown mobile-dropdown">
+        <button class="btn btn-outline lang-btn" style="color: var(--charcoal); border-color: #ddd;">{t('header_lang')} ▾</button>
+        <div class="dropdown-content">
+          <a href={switcher.ja}>日本語</a>
+          <a href={switcher.en}>English</a>
+          <a href={switcher.zh}>中文</a>
+        </div>
+      </div>
+      <a href={bookHref} class="btn btn-gold btn-large" style="width: 100%;">{t('header_book')}</a>
+      <a href={telHref} class="btn btn-outline btn-large" style="width: 100%; border-color: var(--gold); color: var(--gold);">{t('header_call')}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Ported from the old initHeaderInteractions() in src/components/header.js.
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('.mobile-menu-links a, .mobile-menu-actions a').forEach((link) => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  }
+
+  const dropdowns = document.querySelectorAll('.dropdown');
+  document.querySelectorAll('.lang-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const dropdown = btn.closest('.dropdown');
+      dropdowns.forEach((d) => {
+        if (d !== dropdown) d.classList.remove('show');
+      });
+      dropdown?.classList.toggle('show');
+    });
+  });
+  window.addEventListener('click', () => {
+    dropdowns.forEach((d) => d.classList.remove('show'));
+  });
+</script>

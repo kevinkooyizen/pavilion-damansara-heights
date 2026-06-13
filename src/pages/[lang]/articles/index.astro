@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import type { Locale } from '../../../consts';
+import { LOCALES } from '../../../consts';
+import { useTranslations } from '../../../i18n/utils';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Locale;
+const t = useTranslations(lang);
+
+const articles = (await getCollection('articles', ({ id }) => id.startsWith(`${lang}/`)))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const alternates = {
+  en: '/en/articles',
+  ja: '/ja/articles',
+  zh: '/zh/articles',
+  xDefault: '/',
+};
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('articles_meta_title')}
+  description={t('articles_meta_description')}
+  alternates={alternates}
+  headerFull={false}
+  headerFixed={true}
+>
+  <div class="articles-container">
+    <h1 class="section-title text-center" style="margin-bottom: 20px;">{t('articles_heading')}</h1>
+    <p class="text-center" style="color: #666; margin-bottom: 50px;">{t('articles_subheading')}</p>
+
+    <div class="article-grid">
+      {articles.map((article) => {
+        const slug = article.id.split('/').slice(1).join('/');
+        return (
+          <a class="article-card" href={`/${lang}/articles/${slug}`}>
+            <h3>{article.data.cardTitle}</h3>
+            <p style="color: #666; margin-bottom: 15px; font-size: 0.9rem;">{article.data.excerpt}</p>
+            <span class="article-card-cta">{t('article_card_cta')}</span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <Footer lang={lang} variant="minimal" />
+</BaseLayout>

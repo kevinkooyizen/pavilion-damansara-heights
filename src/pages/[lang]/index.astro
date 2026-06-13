@@ -1,0 +1,162 @@
+---
+import type { Locale } from '../../consts';
+import { LOCALES } from '../../consts';
+import { useTranslations } from '../../i18n/utils';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingActions from '../../components/FloatingActions.astro';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Locale;
+const t = useTranslations(lang);
+
+const alternates = { en: '/en/', ja: '/ja/', zh: '/zh/', xDefault: '/' };
+const og = {
+  title: t('home_og_title'),
+  description: t('home_og_description'),
+  image: '/images/hero.webp',
+  url: `/${lang}/`,
+  type: 'website',
+};
+const twitter = {
+  title: 'Pavilion Imperial Residences',
+  description: 'Experience unparalleled convenience and refined living at Pavilion Imperial Residences.',
+  image: '/images/hero.webp',
+};
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('home_title')}
+  description={t('home_description')}
+  alternates={alternates}
+  og={og}
+  twitter={twitter}
+  headerFull={true}
+  headerFixed={false}
+>
+  <div id="app">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content scroll-reveal">
+        <div class="badge">{t('hero_badge')}</div>
+        <h1 class="hero-title" set:html={t('hero_title')} />
+        <p class="hero-desc">{t('hero_desc')}</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold btn-large">{t('hero_action1')}</button>
+          <button class="btn btn-transparent btn-large">{t('hero_action2')}</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="split-section" id="about">
+      <div class="split-content scroll-reveal">
+        <p class="section-subtitle">{t('about_subtitle')}</p>
+        <h2 class="section-title">{t('about_title')}</h2>
+        <p style="margin-bottom: 1.5rem">{t('about_desc1')}</p>
+        <p style="margin-bottom: 2rem">{t('about_desc2')}</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> <span>{t('about_feat1')}</span></li>
+          <li><span class="check">✓</span> <span>{t('about_feat2')}</span></li>
+          <li><span class="check">✓</span> <span>{t('about_feat3')}</span></li>
+          <li><span class="check">✓</span> <span>{t('about_feat4')}</span></li>
+        </ul>
+      </div>
+      <div class="split-image scroll-reveal">
+        <div class="image-wrapper">
+          <img src="/images/preferred%20address.webp" alt="Building Architecture" />
+          <div class="stats-box">
+            <h3>{t('stats_h3')}</h3>
+            <p>{t('stats_p')}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section dark-section" id="amenities">
+      <div class="amenities-header scroll-reveal">
+        <p class="section-subtitle">{t('amenities_sub')}</p>
+        <h2 class="section-title text-white">{t('amenities_title')}</h2>
+        <p class="text-white sub-desc">{t('amenities_desc')}</p>
+      </div>
+      <div class="scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px;">
+        <img src="/images/grand%20porte%20cochere.webp" alt="Grand Porte-Cochère" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+        <img src="/images/North%20Lobby%20Interior.webp" alt="North Lobby Interior" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+      </div>
+    </section>
+
+    <!-- Facilities Gallery & Amenities Level -->
+    <section class="slider-section scroll-reveal" style="padding: 100px 10%; background: #fff;">
+      <h2 class="section-title text-center" style="text-align: center;">{t('facilities_title')}</h2>
+      <div style="display: flex; gap: 40px; margin-top: 50px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <img src="/images/level%206.webp" alt="Level 6 Map" style="width: 100%; border-radius: 4px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);" />
+          <h3 style="color: var(--gold); margin-bottom: 20px;">{t('lvl6_title')}</h3>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> <span>{t('lvl6_feat1')}</span></li>
+            <li><span class="check">✓</span> <span>{t('lvl6_feat2')}</span></li>
+            <li><span class="check">✓</span> <span>{t('lvl6_feat3')}</span></li>
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <img src="/images/level%2050.webp" alt="Level 50 Map" style="width: 100%; border-radius: 4px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);" />
+          <h3 style="color: var(--gold); margin-bottom: 20px;">{t('lvl50_title')}</h3>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> <span>{t('lvl50_feat1')}</span></li>
+            <li><span class="check">✓</span> <span>{t('lvl50_feat2')}</span></li>
+            <li><span class="check">✓</span> <span>{t('lvl50_feat3')}</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floor Layouts -->
+    <section class="layout-section scroll-reveal" id="floorplan" style="padding: 100px 10%; background: var(--light-gray);">
+      <p class="section-subtitle text-center" style="text-align: center;">{t('floorplan_sub')}</p>
+      <h2 class="section-title text-center" style="text-align: center;">{t('floorplan_title')}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px;">
+        <div style="background: #fff; padding: 40px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h3 style="color: var(--charcoal); font-size: 1.5rem;">{t('h2_title')}</h3>
+          <img src="/images/type%20h2.webp" alt="Type H2 Plan" style="width: 100%; margin: 20px 0;" />
+          <p style="color: var(--gold); margin-bottom: 15px; font-weight: 500;">{t('h2_bed')}</p>
+          <p style="color: #666; font-size: 0.95rem;">{t('h2_desc')}</p>
+        </div>
+        <div style="background: #fff; padding: 40px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+          <h3 style="color: var(--charcoal); font-size: 1.5rem;">{t('h1_title')}</h3>
+          <img src="/images/type%20h1.webp" alt="Type H1 Plan" style="width: 100%; margin: 20px 0;" />
+          <p style="color: var(--gold); margin-bottom: 15px; font-weight: 500;">{t('h1_bed')}</p>
+          <p style="color: #666; font-size: 0.95rem;">{t('h1_desc')}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Connectivity -->
+    <section class="location-section scroll-reveal" id="location" style="padding: 100px 10%; background: #fff;">
+      <p class="section-subtitle text-center" style="text-align: center;">{t('loc_sub')}</p>
+      <h2 class="section-title text-center" style="text-align: center;">{t('loc_title')}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 50px; align-items: start;">
+        <div style="border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/images/map.webp" alt="Map" style="width: 100%; height: auto; display: block;" />
+        </div>
+        <div style="background: var(--charcoal); color: #fff; padding: 40px; border-radius: 4px;">
+          <h3 style="margin-bottom: 25px; font-size: 1.4rem; color: var(--gold);">{t('trans_title')}</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px; display: flex; align-items: center; gap: 15px;"><span style="font-size: 1.5rem;">🚇</span> <span>{t('trans1')}</span></li>
+            <li style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px; display: flex; align-items: center; gap: 15px;"><span style="font-size: 1.5rem;">🚆</span> <span>{t('trans2')}</span></li>
+            <li style="display: flex; align-items: center; gap: 15px;"><span style="font-size: 1.5rem;">✈️</span> <span>{t('trans3')}</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <Footer lang={lang} variant="full" />
+  </div>
+
+  <FloatingActions />
+</BaseLayout>
